@@ -1,0 +1,399 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "profil": "Profil Perusahaan",
+    "histori": "Histori",
+    "visi-misi": "Visi & Misi",
+    "nilai-nilai": "Nilai-Nilai",
+    "manajemen": "Manajemen",
+    "product": "Produk",
+    "business": "Bisnis",
+    "business_construction": "Trading & Distribution",
+    "business_services": "HVAC Installation & Services",
+    "business_design": "Creative, IP Licensing & Merchandising",
+    "business_information": "Information Technology Solutions",
+    "business_food": "Food & Beverage Distribution",
+    "news": "Ruang Informasi",
+    "news_company": "Berita",
+    "news_activity": "Kegiatan",
+    "career": "Karir",
+    "contact": "Kontak"
+  },
+  "slides": {
+    "0": {
+      "headline": {
+        "0": "Belonging",
+        "1": "THE KEY TO EXTRA",
+        "2": "ORDINARY",
+        "3": "GROWTH"
+      },
+      "body": "Membangun pertumbuhan berkelanjutan melalui kepercayaan, kolaborasi, dan tujuan bersama",
+      "cta": "Lihat karya"
+    },
+    "1": {
+      "headline": {
+        "0": "A STRONG TEAM CAN",
+        "1": "TAKE ANY CRAZY",
+        "2": "VISION",
+        "3": "AND ",
+        "4": "TURN IT INTO REALITY"
+      },
+      "body": "Setiap pencapaian luar biasa bermula dari gagasan yang berani dan tim yang mampu mewujudkan visi menjadi kenyataan",
+      "cta": "Mulai tumbuh"
+    },
+    "2": {
+      "headline": {
+        "0": "Every Day",
+        "1": "Is A Change",
+        "2": "To Get Better",
+        "3": "DONT WASTE IT "
+      },
+      "body": "Kesuksesan tidak didefinisikan oleh satu pencapaian saja, melainkan oleh tekad untuk terus berkembang, beradaptasi, dan melangkah maju setiap harinya.",
+      "cta": "Lihat caranya"
+    },
+    "4": {
+      "headline": {
+        "0": "The",
+        "1": "Next",
+        "2": "Chapter",
+        "3": "Awaits"
+      },
+      "body": "Setiap perjalanan membuka berbagai kemungkinan baru. Mari kita melangkah maju bersama dan menciptakan masa depan yang ditandai dengan pertumbuhan, inovasi, serta dampak yang berkelanjutan.",
+      "cta": "Hubungi kami"
+    }
+  },
+  "tag_lini": "Lini Bisnis",
+  "header_lini": "Menciptakan nilai melalui beragam Lini Bisnis",
+  "desc_lini": "Kami membangun masa depan melalui lini bisnis yang saling bersinergi untuk mewujudkan efisiensi, keberlanjutan, dan nilai strategis disetiap langkah.",
+  "tag_reddmas": "Tentang Kami",
+  "header_reddmas": "Mendorong pertumbuhan berkelanjutan melalui inovasi",
+  "cta_reddmas": "Tentang Kami",
+  "cta": "Selengkapnya",
+  "readMore": "Baca Selengkapnya",
+  "activities": "Kegiatan",
+  "others": "Lainnya",
+  "posted": "dipost oleh",
+  "desc_reddmas": "Reddmas Group membangun ekosistem bisnis yang terintegrasi melalui lima lini bisnis strategis, dengan komitmen pada inovasi, kolaborasi, dan keberlanjutan sebagai fondasi utama menuju pertumbuhan jangka panjang",
+  "tag_bromo": "Dampak & Keberlanjutan",
+  "header_bromo": "Meraih pencapaian terbaik bersama Reddmas Group",
+  "desc_bromo": "Kami yakin bahwa kontribusi aktif terhadap masyarakat dan lingkungan merupakan bagian penting dalam membangun masa depan yang inklusif, memperluas peluang ekonomi, serta menciptakan dampak positif bagi kehidupan banyak orang",
+  "tag_brand": "Mitra Usaha",
+  "header_brand": "Bekerja sama dengan Reddmas Group",
+  "desc_brand": "Kami dipercaya oleh berbagai perusahaan ternama dalam sektor industri yang beragam",
+  "tag_principle": "Prinsipal",
+  "header_principle": "Fondasi yang kami junjung tinggi",
+  "desc_principle": "Melalui sinergi dengan para prinsipal terpercaya, kami memperkuat transformasi bisnis dan memperluas dampak positif di seluruh lini usaha. Kemitraan ini mendorong kami terus berinovasi dan tumbuh secara berkelanjutan dalam menghadapi tantangan global",
+  "header_footer": "Connect With Us",
+  "header_footer_01": "Head Office",
+  "principle_tab_all": "Semua",
+  "principle_tab_building_materials": "Building Materials",
+  "principle_tab_mep": "MEP Systems",
+  "principle_tab_sanitary": "Sanitary",
+  "principle_tab_ev_charger": "EV Charger",
+  "principle_tabs_label": "Filter prinsipal berdasarkan divisi",
+  "principle_empty": "Belum ada prinsipal pada kategori ini.",
+  "company-profile": {
+    "desc_paragraf_1": "Reddmas Group adalah grup perusahaan yang berkomitmen menghadirkan solusi bisnis terintegrasi untuk mendorong pertumbuhan berkelanjutan.",
+    "desc_paragraf_2": "Dengan keragaman lini bisnis terdiri dari Trading & Distribution, HVAC Installation & Services, Creative, IP Licensing & Merchandising, Information Technology Solution dan Food & Beverage Distribution, Kami hadir sebagai mitra strategis bagi pelanggan dan masyarakat luas.",
+    "desc_paragraf_3": "Kami percaya bahwa pertumbuhan terbaik, tercipta dari kolaborasi yang kuat, inovasi yang relevan, serta standar layanan yang unggul. Oleh karena itu, setiap langkah kami selalu dilandasi komitmen untuk memberikan nilai tambah dan solusi yang tepat di setiap sektor. Dengan semangat integritas yang tinggi, Reddmas Group terus bertumbuh bersama anda - Empowering your growth with integrated solutions",
+    "desc_paragraf_4": "Reddmas Group adalah grup perusahaan yang berkomitmen menghadirkan solusi bisnis terintegrasi untuk mendorong pertumbuhan berkelanjutan.",
+    "desc_paragraf_5": "Berkat kerja keras, inovasi, serta komitmen terhadap kualitas dan pelayanan, PT Intisukses Mitra Sejati berkembang pesat. Pertumbuhan ini mendorong lahirnya perusahaan-perusahaan baru yang bergerak di lima lini bisnis utama, mencerminkan strategi diversifikasi dan pertumbuhan berkelanjutan. Sebagai upaya untuk menyatukan visi, nilai, dan arah strategis dari seluruh lini bisnis, digunakanlah nama Reddmas Group sebagai identitas bersama yang menaungi seluruh lini bisnis.",
+    "desc_paragraf_6": "Penggunaan nama ini bertujuan untuk memperkuat sinergi antar perusahaan serta memudahkan komunikasi dan representasi bisnis secara menyeluruh. Saat ini Reddmas Group menaungi berbagai perusahaan aktif di lima lini bisnis utama dan terus berkomitmen untuk menciptakan nilai tambah bagi pelanggan, mitra, dan seluruh pemangku kepentingan."
+  },
+  "visiMisi": {
+    "visi": {
+      "title": "Visi",
+      "description": "Menjadi perusahaan terdepan dan terpercaya di Indonesia melalui inovasi berkelanjutan dan pelayanan terbaik bagi seluruh pemangku kepentingan."
+    },
+    "misi": {
+      "title": "Misi",
+      "list": {
+        "trading": {
+          "title": "Trading & Distribution",
+          "description": "Menyediakan produk berkualitas tinggi secara efisien dan terpercaya melalui jaringan distribusi yang luas dan terintegrasi."
+        },
+        "hvac": {
+          "title": "HVAC Installation & Services",
+          "description": "Memberikan layanan instalasi dan perawatan sistem HVAC yang andal, hemat energi, dan ramah lingkungan untuk mendukung kenyamanan dan produktivitas pelanggan."
+        },
+        "creative": {
+          "title": "Creative, IP Licensing & Merchandising",
+          "description": "Menciptakan dan mengelola konten kreatif serta lisensi IP & Merchandising yang bernilai tinggi melalui pendekatan desain, inovasi, dan strategi pemasaran yang efektif."
+        },
+        "it": {
+          "title": "Information & Technology Solution",
+          "description": "Mengembangkan solusi teknologi informasi yang inovatif dan adaptif untuk membantu perkembangan bisnis dalam era digital."
+        },
+        "fnb": {
+          "title": "Food & Beverage Distribution",
+          "description": "Menyediakan produk makanan dan minuman pilihan dengan sistem distribusi yang tepat waktu dan terjamin kualitasnya."
+        }
+      }
+    }
+  },
+  "corevalues": {
+    "heading": "Core Values",
+    "desc_corevalues": "Fondasi budaya kerja kami yang membentuk integritas dan keunggulan perusahaan",
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "Tugas, kewajiban, atau tindakan tertentu yang diharapkan dari seseorang dalam lingkup pekerjaannya."
+    },
+    "excellent": {
+      "title": "Excellent",
+      "description": "Standar kualitas yang tinggi dan konsisten dalam melakukan tugas atau kinerja pekerjaan."
+    },
+    "dedicated": {
+      "title": "Dedicated",
+      "description": "Tingkat komitmen, semangat, dan keseriusan seseorang terhadap tugas atau pekerjaannya."
+    },
+    "detailOriented": {
+      "title": "Detail Oriented",
+      "description": "Kemampuan untuk memperhatikan dan memahami detail kecil atau hal-hal yang mungkin terlewatkan oleh orang lain."
+    },
+    "modernization": {
+      "title": "Modernization",
+      "description": "Proses atau upaya untuk memperbaharui, memodernisasi, atau mengadopsi teknologi, metode, atau proses baru yang lebih efisien dan sesuai dengan perkembangan terkini."
+    },
+    "agility": {
+      "title": "Agility",
+      "description": "Kemampuan seseorang terkini atau organisasi untuk beradaptasi dengan cepat terhadap perubahan dan menanggapi situasi yang berubah dengan fleksibilitas dan responsif."
+    },
+    "senseOfBelonging": {
+      "title": "Sense of Belonging",
+      "description": "Perasaan bahwa seseorang adalah bagian integral dari tim atau organisasi tempat mereka bekerja."
+    }
+  },
+  "bod": {
+    "rudy": {
+      "position": "Chief Executive Officer",
+      "description": [
+        "Lahir di Jakarta dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Sejak duduk di Sekolah Dasar telah terlibat dalam bisnis keluarga sebagai pedagang eceran, yang membentuk dasar pemahaman mengenai dunia bisnis.",
+        "Pada tahun 1991, saat masih kuliah mulai bekerja sebagai profesional di konsultan perpajakan dan mulai tahun 1992 sampai dengan 2013 bekerja di bidang akuntansi dan keuangan. Pengalaman - pengalaman tersebut sangat bernilai dalam membangun bisnis di kemudian hari. Pada tahun 2003 memulai usaha menjadi pedagang eceran dan sukses dalam mengembangkan bisnis tersebut.",
+        "Lima tahun kemudian mendirikan PT Intisukses Mitra Sejati, perusahaan pertama yang menjadi cikal bakal untuk ekspansi bisnis selanjutnya. ",
+        "Pada Tahun 2012 mendirikan perusahaan yang kedua yang bergerak di bidang distribusi semen berkolaborasi dengan rekan bisnis dan sejak itu terus berinovasi dan mendirikan beberapa perusahaan lain dalam berbagai bidang bisnis.",
+        "Dengan pengalaman dan visi yang kuat, berkomitmen untuk terus mengembangkan bisnis yang berkelanjutan dan memberikan kontribusi positif bagi pemangku kepentingan (Stakeholder)."
+      ]
+    },
+    "megawati": {
+      "position": "Komisaris",
+      "description": [
+        "Lahir di Serang dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Menghabiskan masa kecil hingga menyelesaikan pendidikan Sekolah Menengah Pertama (SMP) di kota Serang, sebelum melanjutkan ke Sekolah Menengah Atas (SMA) di Jakarta pada tahun 1985 sampai dengan perguruan tinggi. ",
+        "Mulai tahun 1992, semasa kuliah bekerja sebagai profesional di bidang keuangan pada perusahaan yang bergerak di bisnis makanan. Selanjutnya mulai tahun 1994 sampai dengan tahun 2001, bekerja di bidang keuangan pada perusahaan developer yang membangun apartemen, hotel, dan perkantoran. ",
+        "Mental kewirausahaan mulai terasah pada tahun 2003 ketika memulai bisnis dengan menjadi pedagang eceran. Pada tahun 2008, mendirikan perusahaan pertamanya, PT Intisukses Mitra Sejati, yang menjadi cikal bakal bagi berdirinya berbagai perusahaan selanjutnya. ",
+        "Dengan pengalaman yang luas dan dedikasi yang tinggi, akan terus memimpin dan mengembangkan usaha yang memberikan dampak positif di berbagai sektor industri. "
+      ]
+    },
+    "suryo": {
+      "position": "Komisaris Utama",
+      "description": [
+        "Lahir di Serang dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Menghabiskan masa kecil hingga menyelesaikan pendidikan Sekolah Menengah Pertama (SMP) di kota Serang, sebelum melanjutkan ke Sekolah Menengah Atas (SMA) di Jakarta pada tahun 1985 sampai dengan perguruan tinggi. ",
+        "Mulai tahun 1992, semasa kuliah bekerja sebagai profesional di bidang keuangan pada perusahaan yang bergerak di bisnis makanan. Selanjutnya mulai tahun 1994 sampai dengan tahun 2001, bekerja di bidang keuangan pada perusahaan developer yang membangun apartemen, hotel, dan perkantoran. ",
+        "Mental kewirausahaan mulai terasah pada tahun 2003 ketika memulai bisnis dengan menjadi pedagang eceran. Pada tahun 2008, mendirikan perusahaan pertamanya, PT Intisukses Mitra Sejati, yang menjadi cikal bakal bagi berdirinya berbagai perusahaan selanjutnya. ",
+        "Dengan pengalaman yang luas dan dedikasi yang tinggi, akan terus memimpin dan mengembangkan usaha yang memberikan dampak positif di berbagai sektor industri. "
+      ]
+    }
+  },
+  "trading": {
+    "desc_01": "Kami mendistribusikan berbagai produk Mechanical Electrical & Building Materials dari merek-merek terkemuka seperti AC Daikin, Wika SolarWater Heater, Semen Merah-Putih, Mortar Mortindo, Pipa Wavin dan produk lainnya. Semua produk yang kami tawarkan memiliki kualitas unggul untuk memenuhi kebutuhan konstruksi & perlengkapan bangunan."
+  },
+  "havc": {
+    "desc_01": " Kami menyediakan solusi lengkap untuk Pengadaan, Instalasi & Servis AC, mencakup perawatan rutin, perbaikan, hingga penggantian komponen untuk proyek perumahan, hotel, perkantoran, rumah sakit, restoran dan proyek-proyek lainnya. Pelayanan kami dilakukan secara profesional & berkualitas untuk memastikan kinerja AC tetap optimal & tahan lama."
+  },
+  "creative": {
+    "desc_01": "Kami mengelola berbagai acara berbasis Lisensi IP dari Jepang, China, Korea, Indonesia & negara lainnya. Layanan kami mencakup Graphic Motion Design & Content Creation (2D & 3D), IP Licensing & Merchandising. Dengan berfokus pada inovasi & kreatifitas, kami menghadirkan pengalaman yang unik & tak terlupakan."
+  },
+  "information": {
+    "desc_01": "Kami menyediakan solusi IT lengkap meliputi HRIS, IT Service/AssetManagement, Pre-Employment Assessments, Cybersecurity, IoT, SmartMonitoring System & Pengadaan Hardware, untuk meningkatkan efisiensi operasional, menjaga keamanan data & mendukung transformasi digital perusahaan secara efektif & inovatif. "
+  },
+  "food": {
+    "desc_01": "Kami menyediakan makanan siap saji yang praktis, aman & bergizi, diproses secara higienis & dikemas menggunakan Teknologi Retort . Proses ini memastikan makanan tahan lama tanpa pengawet, menjaga rasa, tekstur, serta kandungan nutrisinya dengan aman & efisien. "
+  },
+  "kegiatan": {
+    "header-archive": "Arsip Kegiatan",
+    "header-activities": "Sorotan Utama",
+    "qurban-2025": {
+      "tag": "CSR",
+      "title": "Salurkan Hewan Qurban 2025",
+      "excerpt": "Dalam semangat kebersamaan dan kepedulian sosial, PT Mega Adhitama Sejati, sebagai bagian dari keluarga besar Reddmas Group, kembali melaksanakan kegiatan tahunan penyerahan hewan qurban dalam rangka merayakan Hari Raya Idul Adha 1446 H.",
+      "content": [
+        "Dalam rangka memperingati Hari Raya Idul Adha 1446 Hijriah, PT Mega Adhitama Sejati, salah satu member usaha dari Reddmas Group, kembali menunjukkan komitmen sosialnya melalui kegiatan penyerahan hewan qurban kepada masyarakat sekitar. Tahun ini, PT Mega Adhitama Sejati menyerahkan sejumlah hewan qurban sebagai bentuk rasa syukur atas pencapaian perusahaan sekaligus bagian dari tanggung jawab sosial perusahaan. Penyerahan dilakukan secara simbolis oleh perwakilan manajemen dan diterima langsung oleh panitia qurban di lingkungan yang menjadi lokasi kegiatan.",
+        "“Kegiatan ini merupakan agenda rutin perusahaan setiap Idul Adha sebagai bentuk kontribusi kami kepada masyarakat. Kami berharap, melalui kegiatan ini, keberadaan perusahaan dapat memberi manfaat yang lebih luas dan memperkuat hubungan baik dengan lingkungan sekitar,” ujar Wildan, selaku Perwakilan Mega adhitama Sejati. Kegiatan ini juga menjadi momen penting untuk mempererat tali silaturahmi antar sesama, serta menumbuhkan semangat kepedulian dan berbagi yang sejalan dengan nilai-nilai yang dijunjung tinggi oleh PT Mega Adhitama Sejati dan Reddmas Group.",
+        "Manajemen berharap kegiatan ini dapat memberikan dampak positif dan keberkahan, tidak hanya bagi penerima qurban, tetapi juga seluruh insan perusahaan yang terlibat dalam kegiatan ini."
+      ]
+    },
+    "tahun-baru-2026": {
+      "tag": "Gathering Awal Tahun",
+      "title": "Rayakan Tahun Baru 2026",
+      "excerpt": "Reddmas Group mengawali tahun 2026 dengan menggelar New Year Celebration yang diikuti oleh karyawan dari PT IMS, SMP, IMM, MAS, dan MAP.",
+      "content": [
+        "Reddmas Group mengawali tahun 2026 dengan menggelar New Year Celebration yang diikuti oleh karyawan dari PT IMS, SMP, IMM, MAS, dan MAP. Acara dibuka dengan sambutan dari Bapak Rudy Gunawan yang menyampaikan apresiasi atas kontribusi seluruh karyawan serta harapan untuk terus melangkah maju bersama di tahun yang baru. ",
+        "Suasana semakin meriah dengan pembagian doorprize menarik dan berbagai games seru yang membangkitkan semangat kebersamaan. Tak ketinggalan, photobooth turut dihadirkan untuk mengabadikan momen kebahagiaan, dilanjutkan dengan dinner makan malam bersama dalam suasana hangat dan penuh kekeluargaan.",
+        "Melalui acara ini, Reddmas Group berharap kebersamaan dan semangat positif yang terbangun dapat menjadi energi baru dalam menghadapi tahun 2026."
+      ]
+    },
+    "growing-beyond-boundaries-2026": {
+      "tag": "Pelatihan Sales",
+      "title": "Growing Beyond Boundaries",
+      "excerpt": "Bertempat Hotel, Reddmas Group menggelar Pelatihan team sales bertajuk “Growing Beyond Boundaries.” Kegiatan ini menjadi langkah awal yang kuat untuk mempersiapkan strategi dan performa penjualan di tahun 2026",
+      "content": [
+        "Bertempat Hotel, Reddmas Group menggelar training team sales bertajuk “Growing Beyond Boundaries.” Kegiatan ini menjadi langkah awal yang kuat untuk mempersiapkan strategi dan performa penjualan di tahun 2026. Training menghadirkan Dedy Budiman, Champion Sales Trainer, yang membawakan materi seputar penguatan mindset, strategi negosiasi, hingga teknik closing yang lebih efektif dan terarah.",
+        "Suasana acara berlangsung interaktif dan penuh semangat. Berbagai games menarik dan sesi ice breaking membuat peserta lebih antusias, kompak, serta membangun chemistry tim yang lebih solid. Tidak hanya belajar, seluruh peserta juga menikmati coffee break dan makan siang bersama, yang menjadi momen kebersamaan dan mempererat kolaborasi antar tim. Melalui training ini, Reddmas Group menegaskan komitmennya untuk terus berkembang dan siap terbang melampaui batas di tahun 2026 dengan energi baru, strategi baru, dan semangat juang yang lebih besar. ",
+        "Melalui acara ini, Reddmas Group berharap kebersamaan dan semangat positif yang terbangun dapat menjadi energi baru dalam menghadapi tahun 2026."
+      ]
+    },
+    "lets-grow-together": {
+      "tag": "Pelatihan Karyawan",
+      "title": "Lets Grow Together",
+      "excerpt": "Reddmas Group melalui PT IMS dan SMP menyelenggarakan “Let’s Grow Together – Interactive Motivational” Training pada 9 Agustus 2025 di Hotel Brits Puri Indah.",
+      "content": [
+        "Reddmas Group melalui PT IMS dan SMP menyelenggarakan “Let’s Grow Together – Interactive Motivational” Training pada 9 Agustus 2025 di Hotel Brits Puri Indah.",
+        "Acara ini menghadirkan Louis Sastrawijaya sebagai pembicara, yang memberikan sesi motivasi interaktif untuk mendorong growth mindset, memperkuat kolaborasi tim, dan meningkatkan semangat kerja karyawan.",
+        "Kegiatan ini menjadi wujud komitmen perusahaan dalam mengembangkan potensi SDM serta membangun budaya kerja yang positif dan berkelanjutan."
+      ]
+    }
+  },
+  "berita": {
+    "header-archive": "Arsip Berita",
+    "header-activities": "Sorotan Utama",
+    "wavin-gathering": {
+      "tag": "Gathering Retailer",
+      "title": "Retailer Wavin Gathering 2025",
+      "excerpt": "Dalam upaya memperluas jaringan distribusi dan mempererat hubungan dengan para mitra toko di wilayah Banten, PT Wavin Trading Indonesia berkolaborasi dengan PT Mega Adhitama Sejati menyelenggarakan acara bertajuk Wavin Retailer Gathering 2025 “Bersama Mengaliri Negeri”.",
+      "content": [
+        "Dalam upaya memperluas jaringan distribusi dan mempererat hubungan dengan para mitra toko di wilayah Banten, PT Wavin Trading Indonesia berkolaborasi dengan PT Mega Adhitama Sejati menyelenggarakan acara bertajuk Wavin Retailer Gathering 2025 “Bersama Mengaliri Negeri”. Acara ini menjadi momentum strategis untuk membangun sinergi antara produsen, distributor, dan mitra usaha di sektor infrastruktur perpipaan. Diselenggarakan dengan penuh semangat kolaborasi dan inovasi, gathering ini dihadiri oleh puluhan owner retailer dari berbagai kota dan kabupaten di Provinsi Banten. Tujuan utama dari kegiatan ini adalah untuk memperkuat penetrasi produk Wavin di pasar Banten, serta memperkenalkan solusi dan teknologi terbaru yang dihadirkan oleh Wavin dalam bidang sistem perpipaan dan pengelolaan air. ",
+        "“Banten merupakan salah satu wilayah yang memiliki potensi pasar yang besar di sektor konstruksi dan infrastruktur. Melalui acara ini, kami ingin memperkuat kehadiran kami serta mendekatkan diri kepada para retailer yang selama ini menjadi ujung tombak distribusi produk Wavin,” ujar perwakilan dari PT Wavin Trading Indonesia. Sementara itu, Direktur Utama PT Mega Adhitama Sejati menambahkan bahwa kolaborasi ini diharapkan mampu menciptakan ekosistem bisnis yang lebih solid dan berkelanjutan. Kami sangat menyambut baik kerja sama ini karena kami percaya bahwa dengan kekuatan jaringan dan komitmen bersama, kita dapat tumbuh lebih cepat dan memberikan kontribusi nyata dalam pembangunan negeri, khususnya di wilayah Banten, jelasnya. ",
+        "Acara ini tidak hanya menjadi ajang networking, namun juga sarana edukasi melalui sesi presentasi produk, diskusi bisnis, dan pemberian hadiah kepada retailer. Wavin juga memanfaatkan kesempatan ini untuk mensosialisasikan program-program dukungan penjualan dan promosi yang akan digulirkan sepanjang tahun 2025. Dengan mengusung tema “Bersama Mengaliri Negeri”, Wavin Retailer Gathering 2025 menjadi wujud nyata komitmen perusahaan untuk terus tumbuh bersama para mitra, menyuplai solusi perpipaan berkualitas, dan berkontribusi dalam pembangunan infrastruktur air yang lebih baik dan berkelanjutan di seluruh Indonesia."
+      ]
+    },
+    "semen-gathering": {
+      "tag": "Gathering Retailer",
+      "title": "Retailer Semen Merah Putih Gathering 2025",
+      "excerpt": "Semen Merah Putih sukses menggelar acara Gathering Retail yang berlangsung meriah pada Kamis, 10 April 2025.",
+      "content": [
+        "Semen Merah Putih sukses menggelar acara Gathering Retail yang berlangsung meriah pada Kamis, 10 April 2025. Bertempat di Hotel Aston, acara ini dihadiri oleh para mitra retail terbaik dari berbagai daerah sebagai bentuk apresiasi atas kontribusi mereka dalam mendukung pertumbuhan dan distribusi Semen Merah Putih di pasar nasional. Dengan mengusung tema “Bersama Membangun Negeri”, acara ini menjadi momentum penting untuk menjaga hubungan kemitraan antara Semen Merah Putih dengan para mitra retail, serta memperkuat sinergi demi menghadapi tantangan pasar di tahun 2025 dan ke depan.",
+        "Acara diawali dengan sambutan hangat dari jajaran manajemen PT Cemindo Gemilang Tbk, disusul dengan sesi pemaparan strategi bisnis terbaru, pencapaian penjualan, serta rencana pengembangan distribusi yang lebih efektif dan berkelanjutan. Salah satu momen yang paling ditunggu adalah sesi penghargaan kepada para mitra retail berprestasi, sebagai bentuk apresiasi atas komitmen dan kontribusi mereka dalam menjaga kualitas distribusi Semen Merah Putih di tingkat konsumen akhir. Tak hanya itu, suasana semakin semarak dengan adanya hiburan, doorprize menarik, serta sesi networking yang memungkinkan seluruh peserta untuk saling bertukar pengalaman dan ide.",
+        "Kami percaya bahwa keberhasilan Semen Merah Putih tidak terlepas dari kekuatan sinergi dengan para mitra retail kami. Melalui gathering ini, kami ingin terus menjaga kepercayaan, meningkatkan komunikasi, dan menciptakan kolaborasi yang saling menguntungkan”, ujar Wildan. Dengan semangat kebersamaan, Gathering Retail Semen Merah Putih 2025 diharapkan mampu menjadi pemicu semangat baru dalam membangun kolaborasi yang lebih erat dan produktif ke depannya."
+      ]
+    }
+  },
+  "karir": {
+    "cta_karir": "Kirim Email",
+    "cta_side": "Lihat semua lowongan",
+    "content_h1_01": "Deskripsi Pekerjaan",
+    "content_h1_02": "Tanggung Jawab",
+    "content_h1_03": "Kualifikasi",
+    "content_h1_04": "Benefit",
+    "status_open": "Lowongan Dibuka",
+    "status_closed": "Lowongan Ditutup",
+    "badge_open": "Dibuka",
+    "badge_closed": "Ditutup",
+    "limit_time": "Batas lamaran:",
+    "header_karir": "Bergabung Bersama Kami",
+    "desc_karir": "Temukan peluang karir yang sesuai dengan minat dan keahlian Anda di Reddmas Group.",
+    "header_side": "Lowongan Lainnya",
+    "desc_side": "Tertarik dengan posisi ini? Segera lengkapi kirim CV lamaran Anda.",
+    "warning_title": "Penting!",
+    "warning_body": "HRD recruitment & Placement Reddmas Group menginformasikan bahwa kami <strong>tidak pernah memungut biaya</strong> dalam bentuk apapun, termasuk biaya transportasi dan akomodasi pada proses rekrutmen.",
+    "job_count": "{count, plural, =0 {Tidak ada lowongan} other {# lowongan tersedia}}",
+    "empty_state": "Belum ada lowongan yang tersedia saat ini.",
+    "jobs": {
+      "svp-accounting": {
+        "title": "SPV Accounting",
+        "department": "Finance Accounting",
+        "description": "Kami mencari SPV Accounting berpengalaman untuk mengelola pembukuan, laporan keuangan, dan kepatuhan perpajakan perusahaan.",
+        "responsibilities": [
+          "Membuat pembukuan dan laporan keuangan",
+          "Membuat arsip dan data entry",
+          "Melakukan transaksi keuangan perusahaan dan melakukan pencatatan transaksi secara akurat",
+          "Mengelola dokumen dan surat menyurat perusahaan",
+          "Bertanggungjawab terhadap pembuatan laporan keuangan bulanan dan tahunan tepat waktu",
+          "Mengkoordinasikan dan mengontrol pembayaran dan pelaporan kewajiban perpajakan perusahaan seperti PPh 21, 23, 4 ayat 2, 25 dst",
+          "Memastikan semua proses transaksi keuangan sesuai dengan prosedur dan prinsip akuntansi dan perpajakan."
+        ],
+        "requirements": [
+          "Pengalaman minimal 3 tahun sebagai Senior Accounting di perusahaan kontraktor MEP & HVAC / di KAP min 2 thn",
+          "Pendidikan minimal D3/S1 Akuntansi",
+          "Terbiasa membuat laporan keuangan.",
+          "Paham mengenai aturan pajak yang berlaku di Indonesia",
+          "Terbiasa menggunakan software akuntansi: Accurate / sejenisnya",
+          "Terbiasa memberikan laporan tepat waktu dan bertanggung jawab",
+          "Memiliki loyalitas, etos kerja baik dan dedikasi kerja yang tinggi dalam bekerja"
+        ],
+        "benefits": [
+          "BPJS Kesehatan & Ketenagakerjaan",
+          "Bonus performa",
+          "Tunjangan transportasi"
+        ]
+      },
+      "admin-gudang-jakarta": {
+        "title": "Admin Gudang",
+        "department": "Operasional",
+        "description": "Bertanggung jawab atas pencatatan keluar-masuk barang dan pengelolaan stok gudang material bangunan.",
+        "responsibilities": [
+          "Mencatat dan memverifikasi stok barang masuk dan keluar",
+          "Melakukan stock opname berkala",
+          "Berkoordinasi dengan tim logistik dan sales"
+        ],
+        "requirements": [
+          "Minimal SMA/SMK sederajat",
+          "Teliti dan terbiasa bekerja dengan target",
+          "Menguasai Ms. Excel dasar"
+        ],
+        "benefits": ["BPJS Kesehatan & Ketenagakerjaan", "Uang makan"]
+      },
+      "sales-retail-project": {
+        "title": "Sales Retail / Project",
+        "department": "Marketing",
+        "description": "Mencapai target penjualan produk material bangunan melalui pendekatan ke proyek konstruksi dan retail, membangun hubungan dengan pelanggan, serta memantau perkembangan pasar.",
+        "responsibilities": [
+          "Mengidentifikasi, mengembangkan, dan mengelola peluang penjualan dari prospek awal hingga penutupan transaksi",
+          "Menjalin dan memelihara hubungan jangka panjang dengan klien korporat, mitra strategis, dan stakeholder kunci",
+          "Menyusun dan mempresentasikan proposal penjualan yang komprehensif, termasuk penawaran harga dan solusi produk",
+          "Melakukan negosiasi dengan calon klien untuk mencapai kesepakatan yang saling menguntungkan",
+          "Mengelola timeline proyek dan koordinasi antara tim internal",
+          "Mengumpulkan dan menganalisis data penjualan serta membuat laporan berkala",
+          "Mencapai dan melampaui target penjualan kuartalan dan tahunan"
+        ],
+        "requirements": [
+          "Wajib memiliki SIM C aktif",
+          "Wajib memiliki kendaraan pribadi / motor",
+          "Berpengalaman di bidang Sales Project/Retail di Material Building lebih diutamakan",
+          "Memiliki minimal 2 tahun pengalaman sebagai sales",
+          "Mampu bekerja dalam tim dengan baik"
+        ],
+        "benefits": ["BPJS Kesehatan & Ketenagakerjaan", "Uang makan"]
+      }
+    }
+  },
+  "kontak": {
+    "location_heading": "Lokasi Kami",
+    "desc_heading": "Tim kami siap membantu menjawab pertanyaan seputar produk dan layanan Reddmas Group",
+    "hero_heading_01": "Kami siap membantu",
+    "hero_heading_02": "Anda!",
+    "hero_subtext": "Silakan Isi Form & Konsultasikan",
+    "alert_message_name": "Nama lengkap harus diisi minimal 8 karakter",
+    "alert_message_email": "Alamat email harus diisi",
+    "alert_message_telp": "Nomor telepon harus diisi dengan format yang benar",
+    "alert_message_city": "Kota harus diisi",
+    "alert_message": "Pesan harus diisi minimal 10 karakter",
+    "form": {
+      "name_label": "Nama Lengkap",
+      "email_label": "Alamat Email",
+      "contact_label": "No.Telpon",
+      "contact_hint": "(Ex.+62812 7777 1111)",
+      "country_label": "Kota Anda",
+      "message_label": "Pesan Anda...",
+      "submit": "Kirim Pesan",
+      "submitting": "Mengirim...",
+      "success": "Pesan Anda berhasil dikirim. Kami akan segera menghubungi Anda.",
+      "error": "Terjadi kesalahan, silakan coba lagi."
+    },
+    "locations": {
+      "kantor-utama": { "name": "Kantor Utama" },
+      "email": { "name": "Email" },
+      "telepon": { "name": "Telepon" },
+      "company-profile": { "name": "Download Company Profile" }
+    }
+  }
+}

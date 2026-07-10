@@ -1,0 +1,403 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "profil": "Company Profile",
+    "histori": "History",
+    "visi-misi": "Vision & Mision",
+    "nilai-nilai": "Core Values",
+    "manajemen": "Management",
+    "product": "Product",
+    "business": "Bussiness",
+    "business_construction": "Trading & Distribution",
+    "business_services": "HVAC Installation & Services",
+    "business_design": "Creative, IP Licensing & Merchandising",
+    "business_information": "Information Technology Solution",
+    "business_food": "Food & Beverage Distribution",
+    "news": "Room Information",
+    "news_company": "News",
+    "news_activity": "Activities",
+    "career": "Career",
+    "contact": "Contact"
+  },
+  "slides": {
+    "0": {
+      "headline": {
+        "0": "Belonging",
+        "1": "THE KEY TO EXTRA",
+        "2": "ORDINARY",
+        "3": "GROWTH"
+      },
+      "body": "Building sustainable growth through trust, collaboration, and shared purpose",
+      "cta": "Explore work"
+    },
+    "1": {
+      "headline": {
+        "0": "A STRONG TEAM CAN",
+        "1": "TAKE ANY CRAZY",
+        "2": "VISION",
+        "3": "AND ",
+        "4": "TURN IT INTO REALITY"
+      },
+      "body": "Every remarkable achievement starts with a bold idea and a team capable of turning vision into reality",
+      "cta": "Start growing"
+    },
+    "2": {
+      "headline": {
+        "0": "Every Day",
+        "1": "Is A Change",
+        "2": "To Get Better",
+        "3": "DONT WASTE IT "
+      },
+      "body": "Success is not defined by a single achievement, but by the determination to improve, adapt, and move forward every day.",
+      "cta": "See how"
+    },
+    "4": {
+      "headline": {
+        "0": "The",
+        "1": "Next",
+        "2": "Chapter",
+        "3": "Awaits"
+      },
+      "body": "Every journey opens new possibilities. Let us move forward together and create a future defined by growth, innovation, and lasting impact.",
+      "cta": "Get in touch"
+    }
+  },
+  "tag_lini": "Business Line",
+  "header_lini": "Creating value through diverse business lines",
+  "desc_lini": "We build the future through synergy between business lines to achieve efficiency, sustainability, and strategic value at every step.",
+  "tag_reddmas": "About Us",
+  "header_reddmas": "Driving Sustainable Growth Through Innovation ",
+  "cta_reddmas": "About Us",
+  "cta": "See more",
+  "readMore": "Read More",
+  "activities": "Activities",
+  "others": "Others",
+  "posted": "posted by",
+  "desc_reddmas": "Reddmas Group builds an integrated business ecosystem through five strategic business lines, with a commitment to innovation, collaboration, and sustainability serving as the core foundation for long-term growth",
+  "tag_bromo": "Impact & Sustainability",
+  "header_bromo": "Achieving the best results with Reddmas Group",
+  "desc_bromo": "We believe that actively contributing to society and the environment is essential to building an inclusive future, expanding economic opportunities, and creating a positive impact on the lives of many.",
+  "tag_brand": "Business Partner",
+  "header_brand": "In partnership with Reddmas Group",
+  "desc_brand": "We are trusted by various renowned companies across diverse industry sectors",
+  "tag_principle": "Principle",
+  "header_principle": "The Foundation We Uphold",
+  "desc_principle": "Through synergy with trusted principals, we strengthen business transformation and expand our positive impact across all business lines. These partnerships drive us to continue innovating and growing sustainably in the face of global challenges.",
+  "header_footer": "Connect With Us",
+  "header_footer_01": "Head Office",
+  "principle_tab_all": "All",
+  "principle_tab_building_materials": "Building Materials",
+  "principle_tab_mep": "MEP Systems",
+  "principle_tab_sanitary": "Sanitary",
+  "principle_tab_ev_charger": "EV Charger",
+  "principle_tabs_label": "Filter principals by division",
+  "principle_empty": "No principals in this category yet.",
+  "company-profile": {
+    "desc_paragraf_1": "Reddmas Group is a corporate group committed to delivering integrated business solutions that drive sustainable growth.",
+    "desc_paragraf_2": "With a diverse portfolio spanning Trading & Distribution, HVAC Installation & Services, Creative, IP Licensing & Merchandising, Information Technology Solutions, and Food & Beverage Distribution, we serve as a strategic partner to our clients and the wider community.",
+    "desc_paragraf_3": "We believe that optimal growth stems from strong collaboration, relevant innovation, and superior service standards. Therefore, every step we take is grounded in a commitment to delivering added value and precise solutions across every sector. Driven by a spirit of integrity, Reddmas Group continues to grow alongside you—Empowering your growth with integrated solutions.",
+    "desc_paragraf_4": "Reddmas Group is a corporate group committed to delivering integrated business solutions that drive sustainable growth.",
+    "desc_paragraf_5": "Driven by hard work, innovation, and a commitment to quality and service, PT Intisukses Mitra Sejati has experienced rapid expansion. This growth led to the establishment of new companies across five key business lines, reflecting a strategy of diversification and sustainable development. To unify the vision, values, and strategic direction of these various operations, the name 'Reddmas Group' was adopted as the collective identity for the entire organization.",
+    "desc_paragraf_6": "This name serves to strengthen synergy among the companies while facilitating seamless communication and a unified business presence. Today, Reddmas Group encompasses various active companies across five key business lines and remains dedicated to creating added value for customers, partners, and all stakeholders."
+  },
+  "visiMisi": {
+    "visi": {
+      "title": "Vision",
+      "description": "To become a leading and trusted company in Indonesia through continuous innovation and the best service for all stakeholders."
+    },
+    "misi": {
+      "title": "Mission",
+      "list": {
+        "trading": {
+          "title": "Trading & Distribution",
+          "description": "Providing high-quality products efficiently and reliably through a wide, integrated distribution network."
+        },
+        "hvac": {
+          "title": "HVAC Installation & Services",
+          "description": "Delivering reliable, energy-efficient, and environmentally friendly HVAC installation and maintenance services to support customer comfort and productivity."
+        },
+        "creative": {
+          "title": "Creative, IP Licensing & Merchandising",
+          "description": "Creating and managing high-value creative content and IP licensing & merchandising through design, innovation, and effective marketing strategies."
+        },
+        "it": {
+          "title": "Information & Technology Solution",
+          "description": "Developing innovative and adaptive information technology solutions to support business growth in the digital era."
+        },
+        "fnb": {
+          "title": "Food & Beverage Distribution",
+          "description": "Providing quality food and beverage products with a timely distribution system and guaranteed quality."
+        }
+      }
+    }
+  },
+  "corevalues": {
+    "heading": "Core Values",
+    "desc_corevalues": "The foundation of our work culture that shapes the company's integrity and excellence",
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "Specific duties, obligations, or actions expected of an individual within their scope of work."
+    },
+    "excellent": {
+      "title": "Excellent",
+      "description": "A high and consistent standard of quality in carrying out tasks or work performance."
+    },
+    "dedicated": {
+      "title": "Dedicated",
+      "description": "The level of commitment, enthusiasm, and seriousness a person has toward their tasks or work."
+    },
+    "detailOriented": {
+      "title": "Detail Oriented",
+      "description": "The ability to notice and understand small details or things that others might overlook."
+    },
+    "modernization": {
+      "title": "Modernization",
+      "description": "The process or effort to renew, modernize, or adopt new technologies, methods, or processes that are more efficient and aligned with current developments."
+    },
+    "agility": {
+      "title": "Agility",
+      "description": "The ability of an individual or organization to adapt quickly to change and respond to shifting situations with flexibility and responsiveness."
+    },
+    "senseOfBelonging": {
+      "title": "Sense of Belonging",
+      "description": "The feeling that one is an integral part of the team or organization they work in."
+    }
+  },
+  "bod": {
+    "rudy": {
+      "position": "Chief Executive Officer",
+      "description": [
+        "Born in Jakarta and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. Since elementary school, I have been involved in the family business as a retailer, which laid the foundation for my understanding of the business world.",
+        "In 1991, while still at university, he began working as a professional at a tax consultancy, and from 1992 to 2013, he worked in the fields of accounting and finance. These experiences proved invaluable in building his business later on. In 2003, he started a retail business and successfully expanded it.",
+        "Five years later, he founded PT Intisukses Mitra Sejati, the company that served as the foundation for subsequent business expansion.",
+        "In 2012, he established a second company specializing in cement distribution in collaboration with a business partner; since then, he has continued to innovate and found several other companies across various business sectors.",
+        "Backed by experience and a strong vision, we are committed to continuously developing a sustainable business and making a positive contribution to stakeholders.s"
+      ]
+    },
+    "megawati": {
+      "position": "Commissioner",
+      "description": [
+        "Born in Serang and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. He spent his childhood and completed his junior high school education in Serang, before continuing his high school education in Jakarta in 1985 and then went on to college.",
+        "Starting in 1992, while in college, he worked as a professional in finance for a food company. From 1994 to 2001, he worked in finance for a developer building apartments, hotels, and offices.",
+        "His entrepreneurial spirit began to be honed in 2003 when he started a business as a retailer. In 2008, he founded his first company, PT Intisukses Mitra Sejati, which became the forerunner for various subsequent companies.",
+        "With extensive experience and high dedication, he will continue to lead and develop businesses that have a positive impact in various industrial sectors."
+      ]
+    },
+    "suryo": {
+      "position": "President Commissioner",
+      "description": [
+        "Born in Serang and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. He spent his childhood and completed his junior high school education in Serang, before continuing his high school education in Jakarta in 1985 and then went on to college.",
+        "Starting in 1992, while in college, he worked as a professional in finance for a food company. From 1994 to 2001, he worked in finance for a developer building apartments, hotels, and offices.",
+        "His entrepreneurial spirit began to be honed in 2003 when he started a business as a retailer. In 2008, he founded his first company, PT Intisukses Mitra Sejati, which became the forerunner for various subsequent companies.",
+        "With extensive experience and high dedication, he will continue to lead and develop businesses that have a positive impact in various industrial sectors."
+      ]
+    }
+  },
+  "trading": {
+    "desc_01": "We distribute a wide range of mechanical, electrical, and building material products from leading brands such as Daikin AC, Wika Solar Water Heaters, Semen Merah-Putih, Mortindo Mortar, Wavin pipes, and others. All the products we offer are of superior quality, designed to meet construction and building equipment needs."
+  },
+  "havc": {
+    "desc_01": "We provide comprehensive HVAC solutions—covering procurement, installation, and servicing—including routine maintenance, repairs, and component replacement for residential, hotel, office, hospital, restaurant, and other projects. Our services are delivered with professionalism and high quality to ensure optimal, long-lasting AC performance."
+  },
+  "creative": {
+    "desc_01": "We manage various events based on IP licenses from Japan, China, Korea, Indonesia, and other countries. Our services encompass motion graphics and content creation (2D & 3D), as well as IP licensing and merchandising. By focusing on innovation and creativity, we deliver unique and unforgettable experiences."
+  },
+  "information": {
+    "desc_01": "We provide comprehensive IT solutions—including HRIS, IT Service/Asset Management, pre-employment assessments, cybersecurity, IoT, smart monitoring systems, and hardware procurement—to enhance operational efficiency, ensure data security, and effectively and innovatively support corporate digital transformation."
+  },
+  "food": {
+    "desc_01": "We provide convenient, safe, and nutritious ready-to-eat meals that are hygienically processed and packaged using Retort Technology. This process ensures a long shelf life without the need for preservatives, effectively preserving the food's flavor, texture, and nutritional value."
+  },
+
+  "kegiatan": {
+    "header-archive": "Activities Archive",
+    "header-activities": "New Activities",
+    "qurban-2025": {
+      "tag": "CSR",
+      "title": "Distributing Qurban Animals 2025",
+      "excerpt": "To commemorate Eid al-Adha 1446 Hijriah, PT Mega Adhitama Sejati—a business unit of the Reddmas Group—has once again demonstrated its social commitment by donating sacrificial animals to the local community. This year",
+      "content": [
+        "To commemorate Eid al-Adha 1446 Hijriah, PT Mega Adhitama Sejati—a business unit of the Reddmas Group—has once again demonstrated its social commitment by donating sacrificial animals to the local community. This year, the company presented these animals as an expression of gratitude for its achievements and as part of its corporate social responsibility initiatives. The handover was conducted symbolically by management representatives and received directly by the local organizing committee.",
+        "“This event is a regular part of our company’s agenda every Eid al-Adha, serving as a contribution to the community. We hope that through this initiative, the company’s presence will yield broader benefits and strengthen our positive relationship with the surrounding area,” said Wildan, a representative of PT Mega Adhitama Sejati. The event also served as a significant opportunity to foster closer community ties and cultivate a spirit of care and sharing—values ​​deeply upheld by both PT Mega Adhitama Sejati and the Reddmas Group.",
+        "Management hopes that this initiative will bring positive impact and blessings, not only to the recipients of the sacrificial offerings but also to all company personnel involved in the event."
+      ]
+    },
+    "tahun-baru-2026": {
+      "tag": "New Year Gathering",
+      "title": "Celebrating New Year 2026",
+      "excerpt": "Reddmas Group kicked off 2026 by hosting a New Year celebration attended by employees from PT IMS, SMP, IMM, MAS",
+      "content": [
+        "Reddmas Group kicked off 2026 by hosting a New Year celebration attended by employees from PT IMS, SMP, IMM, MAS, and MAP. The event opened with remarks from Mr. Rudy Gunawan, who expressed appreciation for the employees' contributions and shared his hopes for moving forward together in the new year.",
+        "The atmosphere became even more festive with the distribution of attractive door prizes and various exciting games that fostered a spirit of togetherness. A photo booth was also available to capture happy moments, followed by a communal dinner held in a warm, family-like atmosphere.",
+        "Through this event, Reddmas Group hopes that the sense of togetherness and positive spirit cultivated will serve as a source of renewed energy for facing the year 2026."
+      ]
+    },
+    "growing-beyond-boundaries-2026": {
+      "tag": "Sales Training",
+      "title": "Growing Beyond Boundaries",
+      "excerpt": "Held at a hotel, the Reddmas Group organized a sales team training session titled 'Growing Beyond Boundaries.' This event served as a strong starting point for preparing sales strategies and performance goals for 2026.",
+      "content": [
+        "Held at a hotel, the Reddmas Group organized a sales team training session titled 'Growing Beyond Boundaries.' This event served as a strong starting point for preparing sales strategies and performance goals for 2026. The training featured Champion Sales Trainer Dedy Budiman, who covered topics ranging from mindset strengthening and negotiation strategies to more effective, targeted closing techniques.",
+        "The event was lively and interactive. Engaging games and ice-breaking sessions boosted participant enthusiasm and unity, helping to build stronger team chemistry. Beyond the learning sessions, participants enjoyed coffee breaks and a communal lunch, fostering togetherness and strengthening collaboration across teams. Through this training, Reddmas Group reaffirmed its commitment to growth and its readiness to soar beyond limits in 2026, fueled by renewed energy, fresh strategies, and a heightened fighting spirit.",
+        "Reddmas Group hopes that the camaraderie and positive spirit fostered during this event will serve as a source of renewed energy for the challenges of 2026."
+      ]
+    },
+    "lets-grow-together": {
+      "tag": "Employed Training",
+      "title": "Lets Grow Together",
+      "excerpt": "Reddmas Group, through PT IMS and SMP, organized the “Let’s Grow Together – Interactive Motivational” training on August 9, 2025, at Hotel Brits Puri Indah.",
+      "content": [
+        "Reddmas Group, through PT IMS and SMP, organized the “Let’s Grow Together – Interactive Motivational” training on August 9, 2025, at Hotel Brits Puri Indah.",
+        "The event featured Louis Sastrawijaya as the speaker, who conducted an interactive motivational session aimed at fostering a growth mindset, strengthening team collaboration, and boosting employee morale.",
+        "This activity reflects the company's commitment to developing human resource potential and building a positive, sustainable work culture."
+      ]
+    }
+  },
+  "berita": {
+    "header-archive": "News Archive",
+    "header-activities": "New News",
+    "wavin-gathering": {
+      "tag": "Retailer Gathering",
+      "title": "Wavin Retailer Gathering 2025",
+      "excerpt": "In an effort to expand its distribution network and strengthen relationships with retail partners in the Banten region, PT Wavin Trading Indonesia collaborated with PT Mega Adhitama Sejati to host the 'Wavin Retailer Gathering 2025: Flowing Together for the Nation' (Bersama Mengaliri Negeri).",
+      "content": [
+        "In an effort to expand its distribution network and strengthen relationships with retail partners in the Banten region, PT Wavin Trading Indonesia collaborated with PT Mega Adhitama Sejati to host the 'Wavin Retailer Gathering 2025: Flowing Together for the Nation' (Bersama Mengaliri Negeri). This event served as a strategic moment to build synergy among manufacturers, distributors, and business partners in the piping infrastructure sector. Held in a spirit of collaboration and innovation, the gathering was attended by dozens of retail owners from various cities and regencies across Banten Province. The primary objective of the event was to strengthen the market penetration of Wavin products in Banten and to introduce the latest solutions and technologies offered by Wavin in the fields of piping systems and water management.",
+        "“Banten is a region with immense market potential in the construction and infrastructure sectors. Through this event, we aim to strengthen our presence and build closer ties with the retailers who serve as the spearhead of Wavin product distribution,” stated a representative from PT Wavin Trading Indonesia. Meanwhile, the President Director of PT Mega Adhitama Sejati added that this collaboration is expected to create a more solid and sustainable business ecosystem. 'We warmly welcome this partnership because we believe that by combining our network strengths and shared commitment, we can grow faster and make a tangible contribution to national development, particularly in the Banten region,' he explained.",
+        "The event served not only as a networking opportunity but also as an educational platform featuring product presentations, business discussions, and prize giveaways for retailers. Wavin also utilized the occasion to introduce sales support and promotional programs scheduled for rollout throughout 2025. Centered on the theme 'Flowing Together for the Nation,' the Wavin Retailer Gathering 2025 stands as a tangible demonstration of the company's commitment to growing alongside its partners, supplying high-quality piping solutions, and contributing to the development of superior, sustainable water infrastructure across Indonesia."
+      ]
+    },
+    "semen-gathering": {
+      "tag": "Retailer Gathering",
+      "title": "Semen Merah Putih Retailer Gathering 2025",
+      "excerpt": "Semen Merah Putih successfully hosted a lively Retail Gathering on Thursday, April 10, 2025",
+      "content": [
+        "Semen Merah Putih successfully hosted a lively Retail Gathering on Thursday, April 10, 2025. Held at the Aston Hotel, the event was attended by top retail partners from various regions, serving as a token of appreciation for their contributions to the growth and distribution of Semen Merah Putih in the national market. Centered on the theme 'Building the Nation Together,' the event marked a pivotal moment for nurturing partnerships between Semen Merah Putih and its retailers, while strengthening synergy to tackle market challenges in 2025 and beyond.",
+        "The event opened with warm remarks from the management team of PT Cemindo Gemilang Tbk, followed by presentations on the latest business strategies, sales achievements, and plans for more effective and sustainable distribution development. A highly anticipated highlight was the awards ceremony honoring high-performing retail partners, recognizing their commitment and contribution to maintaining the quality of Semen Merah Putih distribution at the end-consumer level. The atmosphere was further enlivened by entertainment, exciting door prizes, and networking sessions that allowed participants to exchange experiences and ideas.",
+        "We believe that Semen Merah Putih’s success is inseparable from the strength of our synergy with our retail partners. Through this gathering, we aim to maintain trust, enhance communication, and foster mutually beneficial collaboration, said Wildan. Driven by a spirit of togetherness, the 2025 Semen Merah Putih Retail Gathering is expected to spark renewed enthusiasm for building closer and more productive collaborations in the future."
+      ]
+    }
+  },
+  "karir": {
+    "cta_karir": "Send Mail",
+    "cta_side": "View all vacancies",
+    "content_h1_01": "Job Description",
+    "content_h1_02": "Responsibilities",
+    "content_h1_03": "Qualifications",
+    "content_h1_04": "Benefits",
+    "status_open": "Vacancy Open",
+    "status_closed": "Vacancy Closed",
+    "badge_open": "Open",
+    "badge_closed": "Closed",
+    "limit_time": "Application deadline:",
+    "header_karir": "Join Us",
+    "desc_karir": "Discover career opportunities that align with your interests and expertise at Reddmas Group.",
+    "header_side": "Other Vacancies",
+    "desc_side": "Interested in this position? Complete and submit your application CV now.",
+    "warning_title": "Important!",
+    "warning_body": "Reddmas Group HRD Recruitment & Placement would like to inform you that we <strong>never charge any fees</strong> of any kind, including transportation and accommodation, during the recruitment process.",
+    "job_count": "{count, plural, =0 {No openings available} other {# openings available}}",
+    "empty_state": "No job openings are currently available.",
+    "jobs": {
+      "svp-accounting": {
+        "title": "Accounting Supervisor",
+        "department": "Finance & Accounting",
+        "description": "We are seeking an experienced Accounting Supervisor to manage the company's bookkeeping, financial reporting, and tax compliance.",
+        "responsibilities": [
+          "Prepare bookkeeping records and financial statements",
+          "Handle filing and data entry",
+          "Execute company financial transactions and accurately record them",
+          "Manage company documents and correspondence",
+          "Ensure the timely preparation of monthly and annual financial reports",
+          "Coordinate and oversee the payment and reporting of tax obligations (e.g., PPh 21, 23, 4(2), 25, etc.)",
+          "Ensure all financial transaction processes comply with accounting and tax principles and procedures"
+        ],
+        "requirements": [
+          "Minimum 3 years of experience as a Senior Accountant in an MEP & HVAC contracting company, or at least 2 years in a Public Accounting Firm (KAP)",
+          "Minimum Diploma (D3) or Bachelor's degree (S1) in Accounting",
+          "Proficient in preparing financial reports",
+          "Knowledgeable about Indonesian tax regulations",
+          "Proficient in using accounting software (e.g., Accurate or similar)",
+          "Accustomed to submitting reports on time and demonstrating responsibility",
+          "Loyal, with a strong work ethic and high dedication"
+        ],
+        "benefits": [
+          "BPJS Kesehatan & Ketenagakerjaan (Health & Employment Social Security)",
+          "Performance bonus",
+          "Transportation allowance"
+        ]
+      },
+      "admin-gudang-jakarta": {
+        "title": "Warehouse Administrator",
+        "department": "Operations",
+        "description": "Responsible for recording the inflow and outflow of goods and managing inventory for a building materials warehouse.",
+        "responsibilities": [
+          "Record and verify incoming and outgoing stock",
+          "Conduct periodic stock takes",
+          "Coordinate with the logistics and sales teams"
+        ],
+        "requirements": [
+          "Minimum High School (SMA/SMK) or equivalent education",
+          "Detail-oriented and accustomed to working towards targets",
+          "Proficient in basic MS Excel"
+        ],
+        "benefits": ["BPJS Health & Employment Insurance", "Meal allowance"]
+      },
+      "sales-retail-project": {
+        "title": "Retail / Project Sales",
+        "department": "Marketing",
+        "description": "Achieve sales targets for building material products by targeting construction projects and retail channels, building customer relationships, and monitoring market trends.",
+        "responsibilities": [
+          "Identify, develop, and manage sales opportunities from initial prospecting to deal closure",
+          "Establish and maintain long-term relationships with corporate clients, strategic partners, and key stakeholders",
+          "Prepare and present comprehensive sales proposals, including price quotations and product solutions",
+          "Negotiate with prospective clients to reach mutually beneficial agreements",
+          "Manage project timelines and coordinate between internal teams",
+          "Collect and analyze sales data and generate periodic reports",
+          "Meet and exceed quarterly and annual sales targets"
+        ],
+        "requirements": [
+          "Must possess a valid Class C (motorcycle) driver's license",
+          "Must own a personal vehicle/motorcycle",
+          "Experience in project or retail sales within the building materials industry is preferred",
+          "Minimum of 2 years of sales experience",
+          "Ability to work effectively within a team"
+        ],
+        "benefits": [
+          "BPJS Kesehatan & Ketenagakerjaan (Health & Employment Social Security)",
+          "Meal allowance"
+        ]
+      }
+    }
+  },
+  "kontak": {
+    "location_heading": "Our Location",
+    "desc_heading": "Our team is ready to help answer questions about Reddmas Group's products and services",
+    "hero_heading_01": "We're here to help",
+    "hero_heading_02": "You!",
+    "hero_subtext": "Fill out the form for a consultation",
+    "alert_message_name": "Full name must be at least 8 characters long",
+    "alert_message_email": "Email address is required",
+    "alert_message_telp": "Phone number must be entered in the correct format",
+    "alert_message_city": "City is required",
+    "alert_message": "Message must be at least 10 characters long",
+    "form": {
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "contact_label": "Phone Number",
+      "contact_hint": "(e.g., +62812 7777 1111)",
+      "country_label": "Your City",
+      "message_label": "Your Message...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Your message has been sent successfully. We will contact you shortly.",
+      "error": "An error occurred; please try again."
+    },
+    "locations": {
+      "kantor-utama": { "name": "Head Office" },
+      "email": { "name": "Email" },
+      "telepon": { "name": "Phone" },
+      "company-profile": { "name": "Download Company Profile" }
+    }
+  }
+}
