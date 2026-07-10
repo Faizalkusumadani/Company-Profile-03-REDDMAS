@@ -71,7 +71,7 @@ export default async function BeritaPage() {
           {featuredItem && featuredText && (
             <section className="py-20 md:py-28">
               <Link
-                href={`/ruang-informasi/kegiatan/${featuredItem.slug}`}
+                href={`/ruang-informasi/berita/${featuredItem.slug}`}
                 className="group block"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
