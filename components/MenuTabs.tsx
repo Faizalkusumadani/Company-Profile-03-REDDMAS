@@ -15,6 +15,7 @@ const TAB_ORDER: PartnerCategory[] = [
   "building_materials",
   "ev_charger",
   "sanitary",
+  "computer",
 ];
 
 export default function PrincipleTabs({ principles }: PrincipleTabsProps) {

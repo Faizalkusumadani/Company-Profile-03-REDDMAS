@@ -2,7 +2,8 @@ export type PartnerCategory =
   | "building_materials"
   | "mep"
   | "ev_charger"
-  | "sanitary";
+  | "sanitary"
+  | "computer";
 
 export interface Partner {
   name: string;
@@ -130,6 +131,91 @@ const partners: Partner[] = [
     name: "zora",
     logo: "/Principle-Logo/038.png",
     category: "ev_charger",
+  },
+  {
+    name: "kecilin",
+    logo: "/Principle-Logo/039.png",
+    category: "computer",
+  },
+  {
+    name: "kaseya",
+    logo: "/Principle-Logo/040.png",
+    category: "computer",
+  },
+  {
+    name: "invgate",
+    logo: "/Principle-Logo/041.png",
+    category: "computer",
+  },
+  {
+    name: "barracuda",
+    logo: "/Principle-Logo/042.png",
+    category: "computer",
+  },
+  {
+    name: "soti",
+    logo: "/Principle-Logo/043.png",
+    category: "computer",
+  },
+  {
+    name: "dataapp",
+    logo: "/Principle-Logo/044.png",
+    category: "computer",
+  },
+  {
+    name: "stealien",
+    logo: "/Principle-Logo/045.png",
+    category: "computer",
+  },
+  {
+    name: "benq",
+    logo: "/Principle-Logo/046.png",
+    category: "computer",
+  },
+  {
+    name: "msi",
+    logo: "/Principle-Logo/047.png",
+    category: "computer",
+  },
+  {
+    name: "dell",
+    logo: "/Principle-Logo/048.png",
+    category: "computer",
+  },
+  {
+    name: "asrock",
+    logo: "/Principle-Logo/049.png",
+    category: "computer",
+  },
+  {
+    name: "asus",
+    logo: "/Principle-Logo/050.png",
+    category: "computer",
+  },
+  {
+    name: "uniview",
+    logo: "/Principle-Logo/051.png",
+    category: "computer",
+  },
+  {
+    name: "apc",
+    logo: "/Principle-Logo/052.png",
+    category: "computer",
+  },
+  {
+    name: "cisco",
+    logo: "/Principle-Logo/053.png",
+    category: "computer",
+  },
+  {
+    name: "qsan",
+    logo: "/Principle-Logo/054.png",
+    category: "computer",
+  },
+  {
+    name: "zoan",
+    logo: "/Principle-Logo/055.png",
+    category: "computer",
   },
 ];
 
