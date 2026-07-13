@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Breadcrumbs from "@/components/Breadcrumb";
 import {
   getAllJobs,
@@ -222,7 +222,7 @@ export default async function JobDetailPage({
                       {otherJobs.map((j) => (
                         <li key={j.slug}>
                           <Link
-                            href={`/${locale}/karir/${j.slug}`}
+                            href={`/karir/${j.slug}`}
                             className="group block rounded-lg p-3 -mx-3 hover:bg-gray-50 transition-colors"
                           >
                             <p className="text-sm font-medium text-gray-900 group-hover:text-reddmas-red transition-colors">
@@ -236,7 +236,7 @@ export default async function JobDetailPage({
                       ))}
                     </ul>
                     <Link
-                      href={`/${locale}/karir`}
+                      href={`/karir`}
                       className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-reddmas-red hover:underline"
                     >
                       {t("karir.cta_side")}
