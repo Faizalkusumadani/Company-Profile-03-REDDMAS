@@ -136,17 +136,23 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const appBody = (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Pageloader />
+      <Navbar locale={locale as Locale} />
+      <main className="bg-zinc-50 min-h-screen">{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
+  );
+
   return (
     <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
       <body>
-        <SerwistProvider swUrl="/serwist/sw.js">
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <Pageloader />
-            <Navbar locale={locale as Locale} />
-            <main className="bg-zinc-50 min-h-screen">{children}</main>
-            <Footer />
-          </NextIntlClientProvider>
-        </SerwistProvider>
+        {process.env.NODE_ENV === "production" ? (
+          <SerwistProvider swUrl="/serwist/sw.js">{appBody}</SerwistProvider>
+        ) : (
+          appBody
+        )}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}
