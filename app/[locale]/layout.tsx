@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SerwistProvider } from "@serwist/turbopack/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
@@ -106,6 +107,12 @@ export async function generateMetadata({
     },
 
     manifest: "/manifest.webmanifest",
+
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: siteConfig.name,
+    },
   };
 }
 
@@ -132,12 +139,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Pageloader />
-          <Navbar locale={locale as Locale} />
-          <main className="bg-zinc-50 min-h-screen">{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
+        <SerwistProvider swUrl="/serwist/sw.js">
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <Pageloader />
+            <Navbar locale={locale as Locale} />
+            <main className="bg-zinc-50 min-h-screen">{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
+        </SerwistProvider>
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}

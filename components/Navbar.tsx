@@ -298,7 +298,7 @@ function DesktopNavbar({
     <header
       id="navbar"
       ref={headerRef}
-      className="fixed top-0 z-50 hidden w-full border-b border-transparent bg-transparent transition-all duration-500 md:block "
+      className="fixed top-0 z-50 hidden w-full border-b border-transparent bg-transparent transition-all duration-500 lg:block"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
         <NavLogo />
@@ -356,11 +356,24 @@ function MobileOverlay({
     <AnimatePresence>
       {open && (
         <motion.div
+          key="backdrop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          className="fixed inset-0 z-60 bg-black/50"
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
+      {open && (
+        <motion.div
+          key="panel"
           initial={{ opacity: 0, x: "100%" }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "100%" }}
           transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 z-60 flex flex-col bg-reddmas-dark"
+          className="fixed inset-y-0 right-0 z-60 flex w-full flex-col bg-reddmas-dark sm:max-w-sm sm:border-l sm:border-white/10"
           role="dialog"
           aria-modal="true"
         >
@@ -550,7 +563,7 @@ function MobileNavbar({
       <header
         id="navbar-mobile"
         ref={headerRef}
-        className="fixed top-0 z-50 w-full translate-y-0 bg-transparent transition-all duration-300 md:hidden"
+        className="fixed top-0 z-50 w-full translate-y-0 bg-transparent transition-all duration-300 lg:hidden"
       >
         <div className="flex items-center justify-between px-5 py-5">
           <NavLogo />

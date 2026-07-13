@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,8 +10,6 @@ interface PrincipleTabsProps {
   principles: Partner[];
 }
 
-// Urutan tab tetap, terlepas dari urutan data — supaya konsisten setiap render.
-// "mep" ditaruh paling depan karena jadi default tab yang aktif.
 const TAB_ORDER: PartnerCategory[] = [
   "mep",
   "building_materials",
@@ -21,13 +19,16 @@ const TAB_ORDER: PartnerCategory[] = [
 
 export default function PrincipleTabs({ principles }: PrincipleTabsProps) {
   const t = useTranslations();
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const [showLeftFade, setShowLeftFade] = useState(false);
+  const [showRightFade, setShowRightFade] = useState(false);
 
   const availableTabs = useMemo(
     () => TAB_ORDER.filter((cat) => principles.some((p) => p.category === cat)),
     [principles],
   );
 
-  // Default ke "mep" kalau datanya ada; kalau tidak, fallback ke tab pertama yang tersedia.
   const [activeTab, setActiveTab] = useState<PartnerCategory>(
     () => (availableTabs.includes("mep") ? "mep" : availableTabs[0]) ?? "mep",
   );
@@ -46,14 +47,58 @@ export default function PrincipleTabs({ principles }: PrincipleTabsProps) {
     [principles, activeTab],
   );
 
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const updateFade = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = el;
+      setShowLeftFade(scrollLeft > 4);
+      setShowRightFade(scrollLeft < scrollWidth - clientWidth - 4);
+    };
+
+    updateFade();
+    el.addEventListener("scroll", updateFade, { passive: true });
+    window.addEventListener("resize", updateFade);
+    return () => {
+      el.removeEventListener("scroll", updateFade);
+      window.removeEventListener("resize", updateFade);
+    };
+  }, [tabs]);
+
+  // FIX: Menggunakan manual container scroll untuk mencegah kegagalan viewport shifting di mobile
+  const handleSelectTab = (
+    value: PartnerCategory,
+    buttonEl: HTMLButtonElement,
+  ) => {
+    setActiveTab(value);
+
+    const container = scrollRef.current;
+    if (!container) return;
+
+    // Hitung posisi horizontal agar tab yang dipilih berada di tengah container
+    const containerWidth = container.clientWidth;
+    const buttonLeft = buttonEl.offsetLeft;
+    const buttonWidth = buttonEl.clientWidth;
+
+    const targetScrollLeft = buttonLeft - containerWidth / 2 + buttonWidth / 2;
+
+    container.scrollTo({
+      left: targetScrollLeft,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-      {/* Tab menu — scrollable horizontal di mobile, wrap di layar lebih lebar */}
-      <div className="relative mb-8">
-        <div
+      {/* Tab menu */}
+      <div className="relative mb-8 border-b border-slate-200">
+        <motion.div
+          ref={scrollRef}
+          layoutScroll
           role="tablist"
           aria-label={t("principle_tabs_label")}
-          className="flex gap-2 overflow-x-auto scroll-smooth [-ms-overflow-style:none] scrollbar-none sm:flex-wrap sm:overflow-visible [&::-webkit-scrollbar]:hidden"
+          className="flex snap-x snap-proximity touch-pan-x gap-1 overflow-x-auto overscroll-x-contain px-1 scroll-smooth [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] scrollbar-none sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden"
         >
           {tabs.map((tab) => {
             const isActive = activeTab === tab.value;
@@ -63,31 +108,42 @@ export default function PrincipleTabs({ principles }: PrincipleTabsProps) {
                 type="button"
                 role="tab"
                 aria-selected={isActive}
-                onClick={() => setActiveTab(tab.value)}
-                className={`relative shrink-0 whitespace-nowrap rounded-full px-5 py-3 text-sm font-medium outline-none transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-reddmas-red/40 focus-visible:ring-offset-2 ${
+                onClick={(e) => handleSelectTab(tab.value, e.currentTarget)}
+                className={`relative shrink-0 snap-start select-none whitespace-nowrap rounded-t-lg px-4 py-3 text-sm font-medium outline-none transition-colors duration-200 [-webkit-tap-highlight-color:transparent] focus-visible:ring-2 focus-visible:ring-reddmas-red/40 focus-visible:ring-offset-2 sm:px-5 sm:py-3.5 ${
                   isActive
-                    ? "text-white"
-                    : "border border-slate-200 text-slate-600 hover:border-reddmas-red/40 hover:text-reddmas-red"
+                    ? "bg-red-50/60 text-reddmas-red font-semibold"
+                    : "text-slate-500 hover:bg-slate-50 hover:text-reddmas-red active:bg-slate-100"
                 }`}
               >
+                <span className="relative z-10">{tab.label}</span>
                 {isActive && (
                   <motion.span
-                    layoutId="principle-tab-pill"
-                    className="absolute inset-0 rounded-full bg-reddmas-red"
+                    layoutId="principle-tab-underline"
+                    className="absolute inset-x-0 -bottom-px h-0.5 bg-reddmas-red"
                     transition={{ type: "spring", stiffness: 400, damping: 32 }}
                   />
                 )}
-                <span className="relative z-10">{tab.label}</span>
               </button>
             );
           })}
-        </div>
+        </motion.div>
 
-        {/* Petunjuk visual bahwa tab bisa di-scroll, hanya tampil di mobile */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-l from-white to-transparent sm:hidden" />
+        {/* Fade Efek Kiri & Kanan (Menggunakan utilitas standar Tailwind v3/v4 agar kompatibel) */}
+        <div
+          aria-hidden="true"
+          className={`pointer-events-none absolute inset-y-0 left-0 w-10 bg-linear-to-r from-white to-transparent transition-opacity duration-200 sm:hidden ${
+            showLeftFade ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        <div
+          aria-hidden="true"
+          className={`pointer-events-none absolute inset-y-0 right-0 w-10 bg-linear-to-l from-white to-transparent transition-opacity duration-200 sm:hidden ${
+            showRightFade ? "opacity-100" : "opacity-0"
+          }`}
+        />
       </div>
 
-      {/* Grid logo — fade singkat setiap kali tab berganti */}
+      {/* Grid logo */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}

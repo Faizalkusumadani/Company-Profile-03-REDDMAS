@@ -18,12 +18,15 @@ const WORD_DURATION = 0.55;
 
 // Posisi konten per slide (0-indexed). "center" | "left"
 const SLIDE_ALIGN: ("center" | "left")[] = [
-  "center",
+  "left",
   "left",
   "left",
   "center",
   "center",
 ];
+
+// atur headling
+const SLIDE_VERTICAL_OFFSET: string[] = ["", "", "", ""];
 
 // ─── Animated headline ────────────────────────────────────────────────────────
 function AnimatedHeadline({
@@ -135,7 +138,7 @@ function SlideContent({
       {/* Body */}
       <motion.p
         className={`text-base font-light leading-relaxed text-white/70 md:text-lg ${
-          isLeft ? "max-w-lg" : "max-w-2xl"
+          isLeft ? "max-w-lg" : "max-w-3xl"
         }`}
         style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}
         initial={{ opacity: 0, y: 10 }}
@@ -355,13 +358,15 @@ export default function HeroCarousel() {
                 : "items-center px-6"
             }`}
           >
-            <SlideContent
-              slide={slide}
-              t={t}
-              align={align}
-              showCta={current === slides.length - 1}
-              reduceMotion={!!reduceMotion}
-            />
+            <div className={SLIDE_VERTICAL_OFFSET[current] ?? ""}>
+              <SlideContent
+                slide={slide}
+                t={t}
+                align={align}
+                showCta={current === slides.length - 1}
+                reduceMotion={!!reduceMotion}
+              />
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>

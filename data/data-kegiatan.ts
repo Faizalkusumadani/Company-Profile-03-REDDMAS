@@ -37,7 +37,7 @@ export const kegiatanperusahaan: KegiatanItem[] = [
     id: "lets-grow-together",
     slug: "training-lets-grow-together",
     date: "2025-08-09",
-    image: "/Kegiatan/Letsgrow/001.jpeg",
+    image: "/Kegiatan/Letsgrow/001.JPEG",
   },
 ];
 
