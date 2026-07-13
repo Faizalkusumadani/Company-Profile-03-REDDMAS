@@ -46,7 +46,7 @@ export default async function KontakPage() {
         <Breadcrumbs
           title={t("nav.contact")}
           items={[
-            { label: t("nav.home"), href: `/${locale}` },
+            { label: t("nav.home"), href: "/" },
             { label: t("nav.contact") },
           ]}
         />

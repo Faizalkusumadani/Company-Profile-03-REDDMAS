@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { MapPin, Briefcase, Clock } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Job, formatIndonesianDate, isJobOpen } from "@/data/data-karir";
@@ -17,7 +17,7 @@ export default async function JobCard({ job, locale }: JobCardProps) {
 
   return (
     <Link
-      href={`/${locale}/karir/${job.slug}`}
+      href={`/karir/${job.slug}`}
       className="group block rounded-xl border-2 border-gray-200 p-6 transition-all hover:border-reddmas-red hover:shadow-md"
     >
       <div className="flex items-start justify-between gap-4">
