@@ -13,7 +13,7 @@ export const brands: Brand[] = [
   {
     id: 1,
     name: "Agung Sedayu Group",
-    logoSrc: "/Mitra-Logo/agungsedayugroup.png",
+    logoSrc: "/Mitra-Logo/Agung-Sedayu Group.png",
   },
   {
     id: 2,
