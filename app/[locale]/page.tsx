@@ -5,10 +5,19 @@ import HeroCarousel from "@/components/Carousel";
 import BrandMarquee from "@/components/Brandmarquee";
 import principles from "@/data/principle";
 import PrincipleTabs from "@/components/MenuTabs";
+import {
+  beritaperusahaan,
+  getBeritaText,
+  formatBeritaDate,
+  BeritaMessages,
+} from "@/data/data-berita";
 import { MoveRight } from "lucide-react";
 
 export default function HomePage() {
   const t = useTranslations();
+  // Ambil objek teks berita (tag/title/excerpt/content) dari messages,
+  // lalu digabung dengan data struktural (id/slug/date/image) dari data-berita.ts
+  const beritaMessages = t.raw("berita") as BeritaMessages;
 
   return (
     <div className="relative w-full min-h-screen">
@@ -183,6 +192,96 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* --- Section Berita Terbaru --- */}
+      <section id="news" className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50/50">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+              <p className="text-xs font-semibold tracking-[0.15em] uppercase text-reddmas-red mb-2">
+                {t("berita.tag_news") || "Update Terbaru"}
+              </p>
+              <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight">
+                {t("berita.header_news") || "Berita & Artikel"}
+              </h2>
+            </div>
+
+            {/* Button Lihat Semua Berita */}
+            <Link
+              href="/ruang-informasi/berita"
+              className="inline-flex items-center gap-2 self-start md:self-auto text-sm font-semibold text-reddmas-red hover:text-red-700 transition-colors duration-200 group"
+            >
+              {t("berita.view_all_news") || "Lihat Semua Berita"}
+              <MoveRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+          </div>
+
+          {/* Grid Card Berita (Mengambil 3 Data Teratas dari data-berita.ts) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {beritaperusahaan.slice(0, 3).map((news) => {
+              const text = getBeritaText(beritaMessages, news.id);
+
+              return (
+                <article
+                  key={news.slug}
+                  className="group flex flex-col justify-between"
+                >
+                  <Link
+                    href={`/ruang-informasi/berita/${news.slug}`}
+                    className="block w-full"
+                  >
+                    {/* Image Thumbnail dengan Efek Deselerasi Halus */}
+                    <div className="aspect-16/10 relative w-full overflow-hidden bg-gray-50 rounded-xl mb-6">
+                      <Image
+                        src={news.image}
+                        alt={text.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 500px"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-102"
+                      />
+                    </div>
+
+                    {/* Meta info */}
+                    <div className="text-xs text-gray-500 font-medium mb-3">
+                      {formatBeritaDate(news.date)}
+                    </div>
+
+                    {/* Title */}
+                    <h4 className="text-xl font-medium tracking-tight text-gray-950 mb-3 group-hover:text-reddmas-red transition-colors duration-300 line-clamp-2">
+                      {text.title}
+                    </h4>
+
+                    {/* Excerpt */}
+                    <p className="text-sm text-gray-500 font-light leading-relaxed mb-4 line-clamp-2">
+                      {text.excerpt}
+                    </p>
+
+                    {/* Minimalist Link */}
+                    <div className="inline-flex items-center gap-2 text-sm font-semibold text-reddmas-dark group-hover:text-reddmas-red transition-colors duration-300">
+                      <span>{t("readMore")}</span>
+                      <svg
+                        className="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </div>
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* --- Section Education --- */}
       <section
         id="education"

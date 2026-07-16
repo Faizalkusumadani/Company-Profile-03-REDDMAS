@@ -87,8 +87,8 @@ export default async function JobDetailPage({
         <Breadcrumbs
           title={title}
           items={[
-            { label: t("nav.home"), href: `/${locale}` },
-            { label: t("nav.career"), href: `/${locale}/karir` },
+            { label: t("nav.home"), href: `/` },
+            { label: t("nav.career"), href: `/karir` },
             { label: title },
           ]}
         />

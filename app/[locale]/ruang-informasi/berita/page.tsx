@@ -93,7 +93,7 @@ export default async function BeritaPage() {
                   <div className="lg:col-span-5 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-xs font-semibold tracking-widest text-reddmas-red uppercase">
-                        {t("kegiatan.header-activities")}
+                        {t("berita.header_news")}
                       </span>
                       <span className="text-xs text-gray-400">•</span>
                       <span className="text-xs text-gray-500 font-medium">

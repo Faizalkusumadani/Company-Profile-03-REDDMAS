@@ -255,11 +255,13 @@
     }
   },
   "berita": {
+    "tag_news": "Berita Terkini",
     "header-archive": "Arsip Berita",
-    "header-activities": "Sorotan Utama",
-    "wavin-gathering": {
+    "header_news": "Sorotan Utama",
+    "view_all_news": "Lihat Semua Berita",
+    "wavin_gathering_2025": {
       "tag": "Gathering Retailer",
-      "title": "Retailer Wavin Gathering 2025",
+      "title": "Bersama Mengaliri Negri",
       "excerpt": "Dalam upaya memperluas jaringan distribusi dan mempererat hubungan dengan para mitra toko di wilayah Banten, PT Wavin Trading Indonesia berkolaborasi dengan PT Mega Adhitama Sejati menyelenggarakan acara bertajuk Wavin Retailer Gathering 2025 “Bersama Mengaliri Negeri”.",
       "content": [
         "Dalam upaya memperluas jaringan distribusi dan mempererat hubungan dengan para mitra toko di wilayah Banten, PT Wavin Trading Indonesia berkolaborasi dengan PT Mega Adhitama Sejati menyelenggarakan acara bertajuk Wavin Retailer Gathering 2025 “Bersama Mengaliri Negeri”. Acara ini menjadi momentum strategis untuk membangun sinergi antara produsen, distributor, dan mitra usaha di sektor infrastruktur perpipaan. Diselenggarakan dengan penuh semangat kolaborasi dan inovasi, gathering ini dihadiri oleh puluhan owner retailer dari berbagai kota dan kabupaten di Provinsi Banten. Tujuan utama dari kegiatan ini adalah untuk memperkuat penetrasi produk Wavin di pasar Banten, serta memperkenalkan solusi dan teknologi terbaru yang dihadirkan oleh Wavin dalam bidang sistem perpipaan dan pengelolaan air. ",
@@ -267,14 +269,42 @@
         "Acara ini tidak hanya menjadi ajang networking, namun juga sarana edukasi melalui sesi presentasi produk, diskusi bisnis, dan pemberian hadiah kepada retailer. Wavin juga memanfaatkan kesempatan ini untuk mensosialisasikan program-program dukungan penjualan dan promosi yang akan digulirkan sepanjang tahun 2025. Dengan mengusung tema “Bersama Mengaliri Negeri”, Wavin Retailer Gathering 2025 menjadi wujud nyata komitmen perusahaan untuk terus tumbuh bersama para mitra, menyuplai solusi perpipaan berkualitas, dan berkontribusi dalam pembangunan infrastruktur air yang lebih baik dan berkelanjutan di seluruh Indonesia."
       ]
     },
-    "semen-gathering": {
+    "wavin_gathering_2026": {
       "tag": "Gathering Retailer",
-      "title": "Retailer Semen Merah Putih Gathering 2025",
+      "title": "Bermitra Mengaliri Negri",
+      "excerpt": "Kemitraan yang kuat lahir dari kepercayaan, komitmen, dan visi yang sejalan.",
+      "content": [
+        "Kemitraan yang kuat lahir dari kepercayaan, komitmen, dan visi yang sejalan. Semangat tersebut menjadi landasan terselenggaranya Gathering 2026 yang mempertemukan PT Sinergi Mandiri Perkasa dengan PT Wavin Indonesia dalam sebuah kegiatan bertema \"Bermitra Mengaliri Negeri\". Acara ini bukan sekadar ajang silaturahmi, tetapi juga menjadi ruang kolaborasi untuk mempererat hubungan dengan para mitra bisnis, berbagi wawasan mengenai perkembangan teknologi sistem perpipaan modern, serta memperkuat komitmen bersama dalam menghadirkan solusi yang berkualitas bagi kebutuhan pembangunan nasional",
+        "Melalui semangat kolaborasi yang terus dibangun, PT Sinergi Mandiri Perkasa dan PT Wavin Indonesia percaya bahwa setiap proyek yang sukses berawal dari kemitraan yang solid. Dengan mengedepankan inovasi, kualitas produk, serta pelayanan yang profesional, kedua perusahaan berkomitmen untuk terus mendukung pertumbuhan sektor konstruksi dan infrastruktur Indonesia. Tema \"Bermitra Mengaliri Negeri\" menjadi representasi dari tekad bersama untuk menghadirkan solusi perpipaan yang andal, membangun kepercayaan jangka panjang, dan memberikan nilai tambah bagi seluruh pelanggan, mitra usaha, serta masyarakat Indonesia."
+      ]
+    },
+    "semen_gathering_2025": {
+      "tag": "Gathering Retailer",
+      "title": "Bersama-sama Membangun Bangsa",
       "excerpt": "Semen Merah Putih sukses menggelar acara Gathering Retail yang berlangsung meriah pada Kamis, 10 April 2025.",
       "content": [
         "Semen Merah Putih sukses menggelar acara Gathering Retail yang berlangsung meriah pada Kamis, 10 April 2025. Bertempat di Hotel Aston, acara ini dihadiri oleh para mitra retail terbaik dari berbagai daerah sebagai bentuk apresiasi atas kontribusi mereka dalam mendukung pertumbuhan dan distribusi Semen Merah Putih di pasar nasional. Dengan mengusung tema “Bersama Membangun Negeri”, acara ini menjadi momentum penting untuk menjaga hubungan kemitraan antara Semen Merah Putih dengan para mitra retail, serta memperkuat sinergi demi menghadapi tantangan pasar di tahun 2025 dan ke depan.",
         "Acara diawali dengan sambutan hangat dari jajaran manajemen PT Cemindo Gemilang Tbk, disusul dengan sesi pemaparan strategi bisnis terbaru, pencapaian penjualan, serta rencana pengembangan distribusi yang lebih efektif dan berkelanjutan. Salah satu momen yang paling ditunggu adalah sesi penghargaan kepada para mitra retail berprestasi, sebagai bentuk apresiasi atas komitmen dan kontribusi mereka dalam menjaga kualitas distribusi Semen Merah Putih di tingkat konsumen akhir. Tak hanya itu, suasana semakin semarak dengan adanya hiburan, doorprize menarik, serta sesi networking yang memungkinkan seluruh peserta untuk saling bertukar pengalaman dan ide.",
         "Kami percaya bahwa keberhasilan Semen Merah Putih tidak terlepas dari kekuatan sinergi dengan para mitra retail kami. Melalui gathering ini, kami ingin terus menjaga kepercayaan, meningkatkan komunikasi, dan menciptakan kolaborasi yang saling menguntungkan”, ujar Wildan. Dengan semangat kebersamaan, Gathering Retail Semen Merah Putih 2025 diharapkan mampu menjadi pemicu semangat baru dalam membangun kolaborasi yang lebih erat dan produktif ke depannya."
+      ]
+    },
+    "semen_gathering_2026": {
+      "tag": "Gathering Retailer",
+      "title": "Tumbuh Melampaui Batas Bersama Semen Merah Putih",
+      "excerpt": "PT Mega Adhitama Sejati bersama Semen Merah Putih menjadi momentum penting dalam memperkuat hubungan kemitraan dengan para pelanggan retail dan mitra distribusi.",
+      "content": [
+        "PT Mega Adhitama Sejati bersama Semen Merah Putih menjadi momentum penting dalam memperkuat hubungan kemitraan dengan para pelanggan retail dan mitra distribusi. Mengusung tema \"Tumbuh Bersama Melampaui Batas dengan Semen Merah Putih\", kegiatan ini merupakan wujud komitmen kedua perusahaan dalam membangun kolaborasi yang berkelanjutan, meningkatkan kualitas pelayanan, serta mendorong pertumbuhan bisnis yang saling menguntungkan di tengah perkembangan industri bahan bangunan nasional.",
+        "Melalui rangkaian kegiatan yang berlangsung secara interaktif, para peserta memperoleh informasi mengenai inovasi dan keunggulan produk Semen Merah Putih, strategi pengembangan pasar, serta peluang bisnis yang dapat dikembangkan bersama. Selain menjadi sarana berbagi wawasan, Retail Gathering 2026 juga menjadi ajang mempererat komunikasi dan memperkuat sinergi antara PT Mega Adhitama Sejati, Semen Merah Putih, dan seluruh mitra retail sebagai bagian dari upaya menghadirkan solusi material bangunan yang berkualitas, inovatif, dan terpercaya bagi masyarakat Indonesia.",
+        "Ke depan, PT Mega Adhitama Sejati bersama Semen Merah Putih berkomitmen untuk terus menghadirkan produk unggulan, layanan terbaik, serta membangun kemitraan yang kuat dengan seluruh pelanggan dan mitra usaha. Dengan semangat \"Tumbuh Bersama Melampaui Batas dengan Semen Merah Putih\", kegiatan ini diharapkan menjadi langkah nyata dalam menciptakan pertumbuhan yang berkelanjutan, meningkatkan daya saing bisnis, serta memberikan kontribusi positif bagi kemajuan industri konstruksi dan pembangunan di Indonesia."
+      ]
+    },
+    "trilliun_gathering": {
+      "tag": "Gathering Retailer",
+      "title": "Retailer Trilliun Gathering 2026",
+      "excerpt": "PT Intisukses Mitra Sejati bersama PT Matahari Putra Makmur menyelenggarakan kegiatan Corporate Gathering pada 4 Juni 2026 sebagai bentuk apresiasi atas kemitraan yang telah terjalin sekaligus memperkuat sinergi bisnis dalam pengembangan dan pemasaran produk TRILLIUN.",
+      "content": [
+        "PT Intisukses Mitra Sejati bersama PT Matahari Putra Makmur menyelenggarakan kegiatan Corporate Gathering pada 4 Juni 2026 sebagai bentuk apresiasi atas kemitraan yang telah terjalin sekaligus memperkuat sinergi bisnis dalam pengembangan dan pemasaran produk TRILLIUN. Kegiatan ini menjadi momentum bagi kedua perusahaan untuk mempererat hubungan profesional, bertukar wawasan, serta membahas peluang kolaborasi dalam menghadirkan solusi yang lebih baik bagi pelanggan.",
+        "Melalui gathering ini, kedua perusahaan menegaskan komitmen untuk terus membangun kerja sama yang berlandaskan kepercayaan, profesionalisme, dan inovasi. Dengan mengedepankan kualitas layanan serta dukungan terhadap produk TRILLIUN, PT Intisukses Mitra Sejati dan PT Matahari Putra Makmur optimistis dapat menciptakan nilai tambah bagi pelanggan serta memperkuat posisi kedua perusahaan dalam mendukung pertumbuhan bisnis yang berkelanjutan."
       ]
     }
   },
@@ -327,24 +357,30 @@
           "Tunjangan transportasi"
         ]
       },
-      "admin-gudang-jakarta": {
-        "title": "Admin Gudang",
-        "department": "Operasional",
+      "sales-retail": {
+        "title": "Sales Retail",
+        "department": "Marketing",
         "description": "Bertanggung jawab atas pencatatan keluar-masuk barang dan pengelolaan stok gudang material bangunan.",
         "responsibilities": [
-          "Mencatat dan memverifikasi stok barang masuk dan keluar",
-          "Melakukan stock opname berkala",
-          "Berkoordinasi dengan tim logistik dan sales"
+          "Mengidentifikasi, mengembangkan, dan mengelola peluang penjualan dari prospek awal hingga penutupan transaksi",
+          "Menjalin dan memelihara hubungan jangka panjang dengan klien korporat, mitra strategis, dan stakeholder kunci",
+          "Menyusun dan mempresentasikan proposal penjualan yang komprehensif, termasuk penawaran harga dan solusi produk",
+          "Melakukan negosiasi dengan calon klien untuk mencapai kesepakatan yang saling menguntungkan",
+          "Mengelola timeline proyek dan koordinasi antara tim internal",
+          "Mengumpulkan dan menganalisis data penjualan serta membuat laporan berkala",
+          "Mencapai dan melampaui target penjualan kuartalan dan tahunan"
         ],
         "requirements": [
-          "Minimal SMA/SMK sederajat",
-          "Teliti dan terbiasa bekerja dengan target",
-          "Menguasai Ms. Excel dasar"
+          "Wajib memiliki SIM C aktif",
+          "Wajib memiliki kendaraan pribadi / motor",
+          "Berpengalaman di bidang Sales Retail di Material Building lebih diutamakan",
+          "Memiliki minimal 2 tahun pengalaman sebagai sales",
+          "Mampu bekerja dalam tim dengan baik"
         ],
         "benefits": ["BPJS Kesehatan & Ketenagakerjaan", "Uang makan"]
       },
-      "sales-retail-project": {
-        "title": "Sales Retail / Project",
+      "sales-project": {
+        "title": "Sales Project",
         "department": "Marketing",
         "description": "Mencapai target penjualan produk material bangunan melalui pendekatan ke proyek konstruksi dan retail, membangun hubungan dengan pelanggan, serta memantau perkembangan pasar.",
         "responsibilities": [
@@ -359,7 +395,7 @@
         "requirements": [
           "Wajib memiliki SIM C aktif",
           "Wajib memiliki kendaraan pribadi / motor",
-          "Berpengalaman di bidang Sales Project/Retail di Material Building lebih diutamakan",
+          "Berpengalaman di bidang Sales Project di Material Building lebih diutamakan",
           "Memiliki minimal 2 tahun pengalaman sebagai sales",
           "Mampu bekerja dalam tim dengan baik"
         ],

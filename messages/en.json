@@ -256,11 +256,13 @@
     }
   },
   "berita": {
+    "tag_news": "Latest News",
     "header-archive": "News Archive",
-    "header-activities": "New News",
-    "wavin-gathering": {
+    "header_news": "New News",
+    "view_all_news": "View All News",
+    "wavin_gathering_2025": {
       "tag": "Retailer Gathering",
-      "title": "Wavin Retailer Gathering 2025",
+      "title": "Irrigating the Nation Together",
       "excerpt": "In an effort to expand its distribution network and strengthen relationships with retail partners in the Banten region, PT Wavin Trading Indonesia collaborated with PT Mega Adhitama Sejati to host the 'Wavin Retailer Gathering 2025: Flowing Together for the Nation' (Bersama Mengaliri Negeri).",
       "content": [
         "In an effort to expand its distribution network and strengthen relationships with retail partners in the Banten region, PT Wavin Trading Indonesia collaborated with PT Mega Adhitama Sejati to host the 'Wavin Retailer Gathering 2025: Flowing Together for the Nation' (Bersama Mengaliri Negeri). This event served as a strategic moment to build synergy among manufacturers, distributors, and business partners in the piping infrastructure sector. Held in a spirit of collaboration and innovation, the gathering was attended by dozens of retail owners from various cities and regencies across Banten Province. The primary objective of the event was to strengthen the market penetration of Wavin products in Banten and to introduce the latest solutions and technologies offered by Wavin in the fields of piping systems and water management.",
@@ -268,14 +270,42 @@
         "The event served not only as a networking opportunity but also as an educational platform featuring product presentations, business discussions, and prize giveaways for retailers. Wavin also utilized the occasion to introduce sales support and promotional programs scheduled for rollout throughout 2025. Centered on the theme 'Flowing Together for the Nation,' the Wavin Retailer Gathering 2025 stands as a tangible demonstration of the company's commitment to growing alongside its partners, supplying high-quality piping solutions, and contributing to the development of superior, sustainable water infrastructure across Indonesia."
       ]
     },
-    "semen-gathering": {
+    "wavin_gathering_2026": {
       "tag": "Retailer Gathering",
-      "title": "Semen Merah Putih Retailer Gathering 2025",
+      "title": "Partnering to Irrigate the Nation",
+      "excerpt": "Strong partnerships are born from trust, commitment, and a shared vision.",
+      "content": [
+        "Strong partnerships are born from trust, commitment, and a shared vision. This spirit formed the foundation of the 2026 Gathering, which brought together PT Sinergi Mandiri Perkasa and PT Wavin Indonesia for an event themed 'Partnering to Supply the Nation's Flow.' The event served not only as a networking opportunity but also as a collaborative space to strengthen ties with business partners, share insights on modern piping system technology developments, and reinforce a mutual commitment to delivering high-quality solutions for national development needs.",
+        "Through a spirit of ongoing collaboration, PT Sinergi Mandiri Perkasa and PT Wavin Indonesia believe that every successful project begins with a solid partnership. By prioritizing innovation, product quality, and professional service, both companies are committed to supporting the growth of Indonesia's construction and infrastructure sectors. The theme 'Partnering to Supply the Nation's Flow' embodies their shared determination to provide reliable piping solutions, build long-term trust, and deliver added value to all customers, business partners, and the people of Indonesia."
+      ]
+    },
+    "semen_gathering_2025": {
+      "tag": "Retailer Gathering",
+      "title": "Building the Nation Together",
       "excerpt": "Semen Merah Putih successfully hosted a lively Retail Gathering on Thursday, April 10, 2025",
       "content": [
         "Semen Merah Putih successfully hosted a lively Retail Gathering on Thursday, April 10, 2025. Held at the Aston Hotel, the event was attended by top retail partners from various regions, serving as a token of appreciation for their contributions to the growth and distribution of Semen Merah Putih in the national market. Centered on the theme 'Building the Nation Together,' the event marked a pivotal moment for nurturing partnerships between Semen Merah Putih and its retailers, while strengthening synergy to tackle market challenges in 2025 and beyond.",
         "The event opened with warm remarks from the management team of PT Cemindo Gemilang Tbk, followed by presentations on the latest business strategies, sales achievements, and plans for more effective and sustainable distribution development. A highly anticipated highlight was the awards ceremony honoring high-performing retail partners, recognizing their commitment and contribution to maintaining the quality of Semen Merah Putih distribution at the end-consumer level. The atmosphere was further enlivened by entertainment, exciting door prizes, and networking sessions that allowed participants to exchange experiences and ideas.",
         "We believe that Semen Merah Putih’s success is inseparable from the strength of our synergy with our retail partners. Through this gathering, we aim to maintain trust, enhance communication, and foster mutually beneficial collaboration, said Wildan. Driven by a spirit of togetherness, the 2025 Semen Merah Putih Retail Gathering is expected to spark renewed enthusiasm for building closer and more productive collaborations in the future."
+      ]
+    },
+    "semen_gathering_2026": {
+      "tag": "Retailer Gathering",
+      "title": "Growing Beyond Limits with Semen Merah Putih",
+      "excerpt": "The event hosted by PT Mega Adhitama Sejati and Semen Merah Putih marks a significant milestone in strengthening partnerships with retail customers and distribution partners.",
+      "content": [
+        "The event hosted by PT Mega Adhitama Sejati and Semen Merah Putih marks a significant milestone in strengthening partnerships with retail customers and distribution partners. Centered on the theme 'Growing Together Beyond Limits with Semen Merah Putih,' the initiative reflects both companies' commitment to fostering sustainable collaboration, enhancing service quality, and driving mutually beneficial business growth amidst the evolving national building materials industry.",
+        "Through a series of interactive activities, participants gained insights into Semen Merah Putih’s product innovations and advantages, market development strategies, and opportunities for collaborative business growth. Beyond serving as a platform for sharing knowledge, the 'Retail Gathering 2026' fostered closer communication and synergy among PT Mega Adhitama Sejati, Semen Merah Putih, and all retail partners—an effort aimed at delivering high-quality, innovative, and trusted building material solutions to the Indonesian public.",
+        "Looking ahead, PT Mega Adhitama Sejati and Semen Merah Putih remain committed to delivering superior products and excellent service while building robust partnerships with all customers and business associates. Driven by the spirit of 'Growing Together Beyond Limits with Semen Merah Putih,' this event represents a tangible step toward achieving sustainable growth, boosting business competitiveness, and making a positive contribution to the advancement of Indonesia's construction and development sectors."
+      ]
+    },
+    "trilliun_gathering": {
+      "tag": "Retailer Gathering",
+      "title": "Trilliun Retailer Gathering 2026",
+      "excerpt": "PT Intisukses Mitra Sejati and PT Matahari Putra Makmur held a corporate gathering on June 4, 2026, to appreciate their established partnership and strengthen business synergy regarding the development and marketing of TRILLIUN products.",
+      "content": [
+        "PT Intisukses Mitra Sejati and PT Matahari Putra Makmur held a corporate gathering on June 4, 2026, to appreciate their established partnership and strengthen business synergy regarding the development and marketing of TRILLIUN products. This event served as an opportunity for both companies to deepen professional ties, exchange insights, and discuss collaborative prospects for delivering superior solutions to customers.",
+        "Through this gathering, both companies reaffirmed their commitment to fostering a partnership built on trust, professionalism, and innovation. By prioritizing service quality and support for TRILLIUN products, PT Intisukses Mitra Sejati and PT Matahari Putra Makmur are optimistic about creating added value for customers and reinforcing their respective positions to drive sustainable business growth."
       ]
     }
   },
@@ -328,24 +358,33 @@
           "Transportation allowance"
         ]
       },
-      "admin-gudang-jakarta": {
-        "title": "Warehouse Administrator",
-        "department": "Operations",
-        "description": "Responsible for recording the inflow and outflow of goods and managing inventory for a building materials warehouse.",
+      "sales-retail": {
+        "title": "Retail Sales",
+        "department": "Marketing",
+        "description": "Responsible for recording the inflow and outflow of goods and managing inventory in the building materials warehouse.",
         "responsibilities": [
-          "Record and verify incoming and outgoing stock",
-          "Conduct periodic stock takes",
-          "Coordinate with the logistics and sales teams"
+          "Identify, develop, and manage sales opportunities from initial prospect to deal closure",
+          "Build and maintain long-term relationships with corporate clients, strategic partners, and key stakeholders",
+          "Prepare and present comprehensive sales proposals, including price quotations and product solutions",
+          "Negotiate with prospective clients to reach mutually beneficial agreements",
+          "Manage project timelines and coordination among internal teams",
+          "Collect and analyze sales data and generate periodic reports",
+          "Meet and exceed quarterly and annual sales targets"
         ],
         "requirements": [
-          "Minimum High School (SMA/SMK) or equivalent education",
-          "Detail-oriented and accustomed to working towards targets",
-          "Proficient in basic MS Excel"
+          "Must possess a valid Class C (motorcycle) driver's license",
+          "Must own a personal vehicle/motorcycle",
+          "Experience in retail sales within the building materials industry is preferred",
+          "Minimum of 2 years of sales experience",
+          "Ability to work effectively within a team"
         ],
-        "benefits": ["BPJS Health & Employment Insurance", "Meal allowance"]
+        "benefits": [
+          "BPJS Kesehatan & Ketenagakerjaan (Health & Employment Social Security)",
+          "Meal allowance"
+        ]
       },
-      "sales-retail-project": {
-        "title": "Retail / Project Sales",
+      "sales-project": {
+        "title": "Project Sales",
         "department": "Marketing",
         "description": "Achieve sales targets for building material products by targeting construction projects and retail channels, building customer relationships, and monitoring market trends.",
         "responsibilities": [
