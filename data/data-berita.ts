@@ -19,19 +19,19 @@ export const beritaperusahaan: BeritaItem[] = [
     id: "wavin_gathering_2026",
     slug: "retailer-wavin-gathering-2026",
     date: "2026-06-04",
-    image: "/Berita/Retailer Wavin 2026/001.JPEG",
+    image: "/Berita/Retailer Wavin 2026/001.jpeg",
   },
   {
     id: "trilliun_gathering",
     slug: "retailer-trilliun-gathering-2026",
     date: "2026-06-04",
-    image: "/Berita/Retailer Trilliun 2026/001.JPEG",
+    image: "/Berita/Retailer Trilliun 2026/001.jpeg",
   },
   {
     id: "semen_gathering_2026",
     slug: "retailer-semen-merah-putih-gathering-2026",
     date: "2026-06-11",
-    image: "/Berita/Retailer Semen_merah_2026/001.JPEG",
+    image: "/Berita/Retailer Semen_merah_2026/001.jpeg",
   },
   {
     id: "wavin_gathering_2025",
