@@ -22,7 +22,8 @@ export const creativeBrands: CreativeBrand[] = [
     name: "PT Yosh Trimakmur Indonesia",
     logo: "/Logo-PT/Logo_Yosh.png",
     href: "https://yosh-id.com/",
-    instagram: "https://www.instagram.com/yosh.id",
+    instagram:
+      "https://www.instagram.com/yoshid_official?igsh=cnd6dGoyMng3bDBz",
     telp: "+62 877 0110 1997",
     email: "admin@yosh-id.com",
     web: "www.yosh-id.com",
