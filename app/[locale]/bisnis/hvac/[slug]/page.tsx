@@ -199,6 +199,7 @@ export default async function HvacDetailPage({
                   src={brand.logo}
                   alt={brand.name}
                   fill
+                  sizes="(max-width: 448px) 100vw, 448px"
                   className="object-contain"
                 />
               </div>

@@ -3,8 +3,8 @@ export type LocationIcon = "office" | "email" | "phone" | "download";
 export interface ContactLocation {
   key: string;
   icon: LocationIcon;
-  value: string; // teks yang ditampilkan (alamat, email, nomor telp, nama file)
-  href?: string; // opsional: mailto:, tel:, atau link download
+  value: string;
+  href?: string;
 }
 
 export const locations: ContactLocation[] = [

@@ -312,6 +312,7 @@ export default function HeroCarousel() {
             src={slide.imageSrc}
             alt=""
             fill
+            quality={70}
             priority={current === 0}
             className="object-cover"
             style={{ objectPosition: "center 30%" }}

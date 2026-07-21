@@ -54,30 +54,35 @@ export default function HomePage() {
                 title: "Trading & Distribution",
                 desc: "Distribusi bahan bangunan dan mekanikal elektrik berkualitas tinggi",
                 img: "/Talent/trading_distributor.png",
+                href: "/bisnis/trading",
               },
               {
                 num: "02",
                 title: "Hvac Installation & Services",
                 desc: "Installation dengan teknologi terbaru dan pelayanan prima",
                 img: "/Talent/hvac_services.png",
+                href: "/bisnis/hvac",
               },
               {
                 num: "03",
                 title: "Creative, IP Licensing & Merchandising",
                 desc: "Karya Desain Berlisensi untuk Jiwa Anime Anda",
                 img: "/Talent/creative_merchadising.png",
+                href: "/bisnis/creative",
               },
               {
                 num: "04",
                 title: "Information & Technology solutions",
                 desc: "Solusi teknologi inovatif untuk transformasi digital bisnis Anda",
                 img: "/Talent/information_technology.png",
+                href: "/bisnis/information",
               },
               {
                 num: "05",
                 title: "Food & Beverage",
                 desc: "Konsep kuliner inovatif dengan cita rasa otentik dan pengalaman bersantap yang unik",
                 img: "/Talent/food_beverage.png",
+                href: "/bisnis/food",
               },
             ].map((lini, index) => (
               <div
@@ -129,9 +134,12 @@ export default function HomePage() {
                     <p className="text-white/80 text-xs sm:text-sm leading-relaxed mb-3 line-clamp-3 md:line-clamp-none">
                       {lini.desc}
                     </p>
-                    <button className="text-xs sm:text-sm font-semibold text-white border border-reddmas-red px-3 py-1.5 rounded-full md:hover:bg-reddmas-red transition-colors duration-200">
+                    <Link
+                      href={lini.href}
+                      className="text-xs sm:text-sm font-semibold text-white border border-reddmas-red px-3 py-1.5 rounded-full md:hover:bg-reddmas-red transition-colors duration-200"
+                    >
                       {t("cta")}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -237,6 +245,7 @@ export default function HomePage() {
                         src={news.image}
                         alt={text.title}
                         fill
+                        quality={65}
                         sizes="(max-width: 768px) 100vw, 500px"
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-102"
                       />
