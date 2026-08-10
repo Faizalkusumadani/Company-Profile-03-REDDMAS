@@ -14,21 +14,21 @@ export const jobs: Job[] = [
     location: "Jakarta Barat, Indonesia",
     type: "Full-time",
     postedDate: "2026-05-21",
-    deadline: "2026-08-31",
+    deadline: "2026-10-31",
   },
   {
     slug: "sales-retail",
     location: "Jakarta Barat, Tangerang & Kota Serang",
     type: "Full-time",
     postedDate: "2026-06-25",
-    deadline: "2026-07-25",
+    deadline: "2026-12-25",
   },
   {
     slug: "sales-project",
     location: "Jakarta Barat, Tangerang & Kota Serang",
     type: "Full-time",
     postedDate: "2026-06-25",
-    deadline: "2026-07-25",
+    deadline: "2026-12-25",
   },
 ];
 

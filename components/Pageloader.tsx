@@ -1,18 +1,19 @@
+// Pageloader.tsx
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-
-const MIN_DISPLAY_MS = 350;
-const MAX_DISPLAY_MS = 800;
-const FADE_MS = 250;
+import { useLayoutEffect, useRef } from "react";
 
 export default function PageLoader() {
   const loaderRef = useRef<HTMLDivElement>(null);
+  const barRef = useRef<HTMLDivElement>(null);
+  const labelRef = useRef<HTMLParagraphElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const loader = loaderRef.current;
-    if (!loader) return;
+    const bar = barRef.current;
+    const label = labelRef.current;
+    if (!loader || !bar || !label) return;
 
     if (sessionStorage.getItem("loader_shown")) {
       loader.style.display = "none";
@@ -20,40 +21,26 @@ export default function PageLoader() {
     }
     sessionStorage.setItem("loader_shown", "true");
 
-    loader.style.display = "flex";
-    const start = performance.now();
-    let done = false;
+    let current = 0;
+    const interval = setInterval(() => {
+      current += Math.random() * 15 + 5;
+      if (current >= 100) {
+        current = 100;
+        clearInterval(interval);
+        bar.style.width = "100%";
+        label.textContent = "Memuat... 100%";
+        setTimeout(() => {
+          loader.style.opacity = "0";
+          setTimeout(() => (loader.style.display = "none"), 600);
+        }, 300);
+        return;
+      }
+      const val = Math.min(current, 100);
+      bar.style.width = `${val}%`;
+      label.textContent = `Memuat... ${Math.round(val)}%`;
+    }, 100);
 
-    const hide = () => {
-      if (done) return;
-      done = true;
-
-      const elapsed = performance.now() - start;
-      const wait = Math.max(MIN_DISPLAY_MS - elapsed, 0);
-
-      window.setTimeout(() => {
-        loader.style.opacity = "0";
-        window.setTimeout(() => {
-          loader.style.display = "none";
-        }, FADE_MS);
-      }, wait);
-    };
-
-    // Hard cap: jaminan loader tidak pernah menggantung lebih dari MAX_DISPLAY_MS,
-    // apapun yang terjadi dengan loading resource sebenarnya.
-    const hardCap = window.setTimeout(hide, MAX_DISPLAY_MS);
-
-    // Sinyal asli: halaman sudah selesai load (bukan angka random dari setInterval)
-    if (document.readyState === "complete") {
-      hide();
-    } else {
-      window.addEventListener("load", hide, { once: true });
-    }
-
-    return () => {
-      window.clearTimeout(hardCap);
-      window.removeEventListener("load", hide);
-    };
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -62,14 +49,14 @@ export default function PageLoader() {
       id="mas-page-loader"
       aria-hidden="true"
       style={{
-        display: "none",
+        display: "flex",
         position: "fixed",
         inset: 0,
         zIndex: 9999,
-        backgroundColor: "#0f172a",
+        backgroundColor: "#ffffff",
         alignItems: "center",
         justifyContent: "center",
-        transition: `opacity ${FADE_MS}ms ease`,
+        transition: "opacity 0.6s ease",
         opacity: 1,
       }}
     >
@@ -81,6 +68,7 @@ export default function PageLoader() {
           gap: "1.25rem",
         }}
       >
+        {/* Logo */}
         <div
           style={{
             display: "flex",
@@ -91,7 +79,7 @@ export default function PageLoader() {
         >
           <Image
             src="/loading-screen.png"
-            alt="MAS Logo"
+            alt="reddmas Logo"
             width={120}
             height={80}
             style={{ objectFit: "contain" }}
@@ -102,7 +90,7 @@ export default function PageLoader() {
               fontFamily: "Poppins, sans-serif",
               fontSize: "1rem",
               fontWeight: 600,
-              color: "#d23439",
+              color: "#0f172a",
               letterSpacing: "-0.01em",
             }}
           >
@@ -110,8 +98,7 @@ export default function PageLoader() {
           </span>
         </div>
 
-        {/* Progress bar sekarang dekoratif murni (CSS animation di GPU),
-            bukan JS interval yang terus mengubah DOM tiap 100ms. */}
+        {/* Progress bar track */}
         <div
           style={{
             width: "200px",
@@ -121,33 +108,31 @@ export default function PageLoader() {
             overflow: "hidden",
           }}
         >
-          <div className="mas-loader-sweep" />
+          <div
+            ref={barRef}
+            style={{
+              height: "100%",
+              width: "0%",
+              backgroundColor: "#b22222",
+              borderRadius: "9999px",
+              transition: "width 0.15s ease",
+            }}
+          />
         </div>
-      </div>
 
-      <style jsx>{`
-        .mas-loader-sweep {
-          height: 100%;
-          width: 15%;
-          border-radius: 9999px;
-          background-color: #b22222;
-          animation: mas-sweep 0.6s ease-in-out infinite;
-        }
-        @keyframes mas-sweep {
-          0% {
-            margin-left: 0%;
-            width: 15%;
-          }
-          50% {
-            margin-left: 55%;
-            width: 40%;
-          }
-          100% {
-            margin-left: 0%;
-            width: 15%;
-          }
-        }
-      `}</style>
+        {/* Label */}
+        <p
+          ref={labelRef}
+          style={{
+            fontFamily: "Poppins, sans-serif",
+            fontSize: "0.75rem",
+            color: "#94a3b8",
+            marginTop: "-0.5rem",
+          }}
+        >
+          Memuat... 0%
+        </p>
+      </div>
     </div>
   );
 }
