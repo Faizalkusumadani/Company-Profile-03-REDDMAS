@@ -22,6 +22,7 @@ const poppins = Poppins({
 const siteConfig = {
   url: "https://reddmasgroup.com/",
   name: "Reddmas Group",
+  shortName: "Reddmas",
   description:
     "Reddmas Group membangun ekosistem bisnis terintegrasi: Trading, HVAC Installation, IT Solutions, Creative IP, dan F&B. Inovasi & kolaborasi untuk pertumbuhan berkelanjutan.",
   ogImage: "/og-image.png",
@@ -134,6 +135,47 @@ export default async function LocaleLayout({
   // Wajib dipanggil supaya static rendering per-locale bekerja dengan benar
   setRequestLocale(locale);
 
+  // Dynamic Schema JSON-LD per Locale — tetap di layout karena ini
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": `${siteConfig.url}/#organization`,
+    description: `${siteConfig.description}`,
+    name: siteConfig.name,
+    alternateName: siteConfig.shortName,
+    url: `${siteConfig.url}/${locale}`,
+    logo: `${siteConfig.url}/logo/logo-smp.png`,
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    telephone: "+62-21-5835-1648",
+    // TODO: pastikan domain email ini benar & aktif — beda dengan domain situs
+    email: "customersupport@reddmasgroup.com",
+    priceRange: "$$",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress:
+        "Ciputra International Tokopedia Care Tower, 20th Floor, Unit 20.01 Jl. Lingkar Luar Barat No. 101",
+      addressLocality: "Jakarta",
+      addressRegion: "DKI Jakarta",
+      postalCode: "11740",
+      addressCountry: "ID",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -6.183925463337667,
+      longitude: 106.69935959559166,
+    },
+    // Diperluas sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "DKI Jakarta" },
+      { "@type": "AdministrativeArea", name: "Banten" },
+      { "@type": "AdministrativeArea", name: "Jawa Barat" },
+    ],
+    sameAs: [
+      "https://www.instagram.com/reddmas.group?igsh=MWFoeDhnejF4eGNi",
+      "https://www.linkedin.com/company/reddmas-group/",
+      "https://www.youtube.com/@reddmasgroup",
+    ],
+  };
   const messages = await getMessages();
 
   const appBody = (
@@ -147,6 +189,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         {process.env.NODE_ENV === "production" ? (
           <SerwistProvider swUrl="/serwist/sw.js">{appBody}</SerwistProvider>

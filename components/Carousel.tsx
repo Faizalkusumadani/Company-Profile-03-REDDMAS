@@ -302,7 +302,7 @@ export default function HeroCarousel() {
         <motion.div
           key={`slide-${current}`}
           className="absolute inset-0"
-          initial={{ opacity: 0 }}
+          initial={current === 0 ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: transitionDuration, ease: "easeInOut" }}

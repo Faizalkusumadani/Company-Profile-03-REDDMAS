@@ -3,54 +3,57 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
+const MIN_DISPLAY_MS = 350;
+const MAX_DISPLAY_MS = 800;
+const FADE_MS = 250;
+
 export default function PageLoader() {
   const loaderRef = useRef<HTMLDivElement>(null);
-  const barRef = useRef<HTMLDivElement>(null);
-  const labelRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     const loader = loaderRef.current;
-    const bar = barRef.current;
-    const label = labelRef.current;
-    if (!loader || !bar || !label) return;
+    if (!loader) return;
 
-    // Cek session — jika sudah pernah tampil, sembunyikan langsung
     if (sessionStorage.getItem("loader_shown")) {
       loader.style.display = "none";
       return;
     }
-
     sessionStorage.setItem("loader_shown", "true");
 
-    // Tampilkan loader
     loader.style.display = "flex";
+    const start = performance.now();
+    let done = false;
 
-    let current = 0;
-    const interval = setInterval(() => {
-      current += Math.random() * 15 + 5;
+    const hide = () => {
+      if (done) return;
+      done = true;
 
-      if (current >= 100) {
-        current = 100;
-        clearInterval(interval);
-        bar.style.width = "100%";
-        label.textContent = "Memuat... 100%";
+      const elapsed = performance.now() - start;
+      const wait = Math.max(MIN_DISPLAY_MS - elapsed, 0);
 
-        setTimeout(() => {
-          loader.style.opacity = "0";
-          setTimeout(() => {
-            loader.style.display = "none";
-          }, 600);
-        }, 300);
+      window.setTimeout(() => {
+        loader.style.opacity = "0";
+        window.setTimeout(() => {
+          loader.style.display = "none";
+        }, FADE_MS);
+      }, wait);
+    };
 
-        return;
-      }
+    // Hard cap: jaminan loader tidak pernah menggantung lebih dari MAX_DISPLAY_MS,
+    // apapun yang terjadi dengan loading resource sebenarnya.
+    const hardCap = window.setTimeout(hide, MAX_DISPLAY_MS);
 
-      const val = Math.min(current, 100);
-      bar.style.width = `${val}%`;
-      label.textContent = `Memuat... ${Math.round(val)}%`;
-    }, 100);
+    // Sinyal asli: halaman sudah selesai load (bukan angka random dari setInterval)
+    if (document.readyState === "complete") {
+      hide();
+    } else {
+      window.addEventListener("load", hide, { once: true });
+    }
 
-    return () => clearInterval(interval);
+    return () => {
+      window.clearTimeout(hardCap);
+      window.removeEventListener("load", hide);
+    };
   }, []);
 
   return (
@@ -66,7 +69,7 @@ export default function PageLoader() {
         backgroundColor: "#0f172a",
         alignItems: "center",
         justifyContent: "center",
-        transition: "opacity 0.6s ease",
+        transition: `opacity ${FADE_MS}ms ease`,
         opacity: 1,
       }}
     >
@@ -78,7 +81,6 @@ export default function PageLoader() {
           gap: "1.25rem",
         }}
       >
-        {/* Logo */}
         <div
           style={{
             display: "flex",
@@ -108,7 +110,8 @@ export default function PageLoader() {
           </span>
         </div>
 
-        {/* Progress bar track */}
+        {/* Progress bar sekarang dekoratif murni (CSS animation di GPU),
+            bukan JS interval yang terus mengubah DOM tiap 100ms. */}
         <div
           style={{
             width: "200px",
@@ -118,31 +121,33 @@ export default function PageLoader() {
             overflow: "hidden",
           }}
         >
-          <div
-            ref={barRef}
-            style={{
-              height: "100%",
-              width: "0%",
-              backgroundColor: "#b22222",
-              borderRadius: "9999px",
-              transition: "width 0.15s ease",
-            }}
-          />
+          <div className="mas-loader-sweep" />
         </div>
-
-        {/* Label */}
-        <p
-          ref={labelRef}
-          style={{
-            fontFamily: "Poppins, sans-serif",
-            fontSize: "0.75rem",
-            color: "#e2e8f0",
-            marginTop: "-0.5rem",
-          }}
-        >
-          Memuat... 0%
-        </p>
       </div>
+
+      <style jsx>{`
+        .mas-loader-sweep {
+          height: 100%;
+          width: 15%;
+          border-radius: 9999px;
+          background-color: #b22222;
+          animation: mas-sweep 0.6s ease-in-out infinite;
+        }
+        @keyframes mas-sweep {
+          0% {
+            margin-left: 0%;
+            width: 15%;
+          }
+          50% {
+            margin-left: 55%;
+            width: 40%;
+          }
+          100% {
+            margin-left: 0%;
+            width: 15%;
+          }
+        }
+      `}</style>
     </div>
   );
 }

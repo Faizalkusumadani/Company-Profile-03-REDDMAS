@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [25, 50, 65, 70, 75, 80],
   },
+  experimental: {
+    inlineCss: true,
+  },
 };
 
 export default withSerwist(withNextIntl(nextConfig));
