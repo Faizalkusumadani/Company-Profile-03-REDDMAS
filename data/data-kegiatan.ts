@@ -3,6 +3,7 @@ export interface KegiatanItem {
   slug: string;
   date: string;
   image: string;
+  updatedAt: string;
 }
 
 export interface KegiatanText {
@@ -20,24 +21,28 @@ export const kegiatanperusahaan: KegiatanItem[] = [
     slug: "salurkan-hewan-qurban-2025",
     date: "2025-06-04",
     image: "/Kegiatan/Qurban 2025/1A.jpeg",
+    updatedAt: "2025-06-04",
   },
   {
     id: "tahun-baru-2026",
     slug: "rayakan-tahun-baru-2026",
     date: "2026-01-12",
     image: "/Kegiatan/Celebrate_12_Januari_2026/1.JPG",
+    updatedAt: "2026-01-12",
   },
   {
     id: "growing-beyond-boundaries-2026",
     slug: "training-growing-beyond-boundaries-2026",
     date: "2026-02-07",
     image: "/Kegiatan/Growing/1.jpeg",
+    updatedAt: "2026-02-07",
   },
   {
     id: "lets-grow-together",
     slug: "training-lets-grow-together",
     date: "2025-08-09",
     image: "/Kegiatan/Letsgrow/001.JPEG",
+    updatedAt: "2025-08-09",
   },
 ];
 

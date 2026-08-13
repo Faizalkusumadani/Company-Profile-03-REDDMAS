@@ -147,7 +147,6 @@ export default async function LocaleLayout({
     logo: `${siteConfig.url}/logo/logo-smp.png`,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     telephone: "+62-21-5835-1648",
-    // TODO: pastikan domain email ini benar & aktif — beda dengan domain situs
     email: "customersupport@reddmasgroup.com",
     priceRange: "$$",
     address: {
@@ -161,8 +160,8 @@ export default async function LocaleLayout({
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: -6.183925463337667,
-      longitude: 106.69935959559166,
+      latitude: -6.172975522228764,
+      longitude: 106.73014006061322,
     },
     // Diperluas sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
     areaServed: [

@@ -80,10 +80,11 @@ export default function PageLoader() {
           <Image
             src="/loading-screen.png"
             alt="reddmas Logo"
-            width={120}
+            width={160}
             height={80}
             style={{ objectFit: "contain" }}
             priority
+            fetchPriority="high"
           />
           <span
             style={{
