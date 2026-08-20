@@ -202,7 +202,7 @@ export default function HomePage() {
       </section>
 
       {/* --- Section Berita Terbaru --- */}
-      <section id="news" className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50/50">
+      <section id="news" className="py-20 px-6 md:px-12 lg:px-24 bg-zinc-50">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -327,7 +327,7 @@ export default function HomePage() {
       </section>
 
       {/* --- Section Brandmarquee --- */}
-      <section className="relative w-full overflow-hidden bg-white py-16 md:py-20">
+      <section className="relative w-full overflow-hidden bg-zinc-50 py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-10 text-center md:mb-20">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[3px] text-reddmas-red">

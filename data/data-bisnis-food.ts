@@ -20,7 +20,7 @@ export const foodBrands: FoodBrand[] = [
     slug: "indorasa-berkat-melimpah",
     name: "PT Indorasa Berkat Melimpah",
     logo: "/Logo-PT/Logo_IBM.png",
-    href: "www.indorasaberkat.com",
+    href: "https://www.indorasaberkat.com/",
     instagram:
       "https://www.instagram.com/indorasa.bm?igsh=MXhwb3d0bmdyazI5bA%3D%3D",
     telp: "+62 811 1887 775",

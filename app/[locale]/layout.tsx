@@ -163,12 +163,17 @@ export default async function LocaleLayout({
       latitude: -6.172975522228764,
       longitude: 106.73014006061322,
     },
-    // Diperluas sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
     areaServed: [
       { "@type": "AdministrativeArea", name: "DKI Jakarta" },
       { "@type": "AdministrativeArea", name: "Banten" },
       { "@type": "AdministrativeArea", name: "Jawa Barat" },
     ],
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "16:30",
+    },
     sameAs: [
       "https://www.instagram.com/reddmas.group?igsh=MWFoeDhnejF4eGNi",
       "https://www.linkedin.com/company/reddmas-group/",
@@ -181,20 +186,20 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Pageloader />
       <Navbar locale={locale as Locale} />
-      <main className="bg-zinc-50 min-h-screen">{children}</main>
+      <main className="min-h-screen">{children}</main>
       <Footer />
     </NextIntlClientProvider>
   );
 
   return (
-    <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
+    <html lang={locale} className={`${poppins.variable} h-full`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
+      <body className="font-sans antialiased bg-background">
         {process.env.NODE_ENV === "production" ? (
           <SerwistProvider swUrl="/serwist/sw.js">{appBody}</SerwistProvider>
         ) : (

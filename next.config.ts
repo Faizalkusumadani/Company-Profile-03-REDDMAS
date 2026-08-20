@@ -7,9 +7,8 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const nextConfig: NextConfig = {
   images: {
     qualities: [25, 50, 65, 70, 75, 80],
-  },
-  experimental: {
-    inlineCss: true,
+    deviceSizes: [384, 480, 640, 750, 828, 1080, 1200, 1920],
+    formats: ["image/avif", "image/webp"],
   },
 };
 

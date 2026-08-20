@@ -195,6 +195,42 @@
       ]
     }
   },
+  "timeline": {
+    "items": {
+      "intisukses-mitra-sejati": {
+        "title": "PT Intisukses Mitra Sejati",
+        "description": "The first company that became the forerunner of Reddmas Group, focusing on distribution of Mechanical Electrical & Building Materials as well as the supply, installation and maintenance of Air Conditioners (AC)"
+      },
+      "mega-adhitama-sejati": {
+        "title": "PT Mega Adhitama Sejati",
+        "description": "A company engaged in retail sales of Semen Merah Putih cement, Dulux & Catylac paint, Wavin pipes, Servvo fire extinguishers and other building materials for the Banten area"
+      },
+      "sinergi-mandiri-perkasa": {
+        "title": "PT Sinergi Mandiri Perkasa",
+        "description": "A company engaged in sales of Semen Merah Putih cement, Mortindo mortar, Wavin pipes, Servvo fire extinguishers and other building materials for project customers in the Jabodetabek area"
+      },
+      "intisukses-mitratama-mandiri": {
+        "title": "PT Intisukses Mitratama Mandiri",
+        "description": "A company established in Air Conditioner (AC) installation and maintenance, partnering with PT Intisukses Mitra Sejati to expand its service offerings"
+      },
+      "yosh-trimakmur-indonesia": {
+        "title": "PT Yosh Trimakmur Indonesia",
+        "description": "A company engaged in Creative services, IP Licensing & Promotional goods supply"
+      },
+      "mega-globalindo-sinergi": {
+        "title": "PT Mega Globalindo Sinergi",
+        "description": "A company engaged in the sale of information technology products, both hardware and software"
+      },
+      "rootindo-global-teknologi": {
+        "title": "PT Rootindo Global Teknologi",
+        "description": "A company engaged in information technology and digitalization, delivering modern technology solutions for industry needs and digital transformation"
+      },
+      "indorasa-berkat-melimpah": {
+        "title": "PT Indorasa Berkat Melimpah",
+        "description": "A company providing practical, safe, nutritious and hygienically processed ready-to-eat food"
+      }
+    }
+  },
   "trading": {
     "desc_01": "We distribute a wide range of mechanical, electrical, and building material products from leading brands such as Daikin AC, Wika Solar Water Heaters, Semen Merah-Putih, Mortindo Mortar, Wavin pipes, and others. All the products we offer are of superior quality, designed to meet construction and building equipment needs."
   },
@@ -210,10 +246,30 @@
   "food": {
     "desc_01": "We provide convenient, safe, and nutritious ready-to-eat meals that are hygienically processed and packaged using Retort Technology. This process ensures a long shelf life without the need for preservatives, effectively preserving the food's flavor, texture, and nutritional value."
   },
-
   "kegiatan": {
     "header-archive": "Activities Archive",
     "header-activities": "New Activities",
+    "annual-gathering-bromo-2023": {
+      "tag": "Annual Gathering",
+      "title": "Annual Gathering Bromo Tour 2023",
+      "excerpt": "The 2023 Annual Gathering served as an opportunity for the extended Reddmas Group family to come together, relax, and enjoy time with one another outside of work activities.",
+      "content": [
+        "The 2023 Annual Gathering served as an opportunity for the extended Reddmas Group family to come together, relax, and enjoy time with one another outside of work activities. Through the Reddmas Group tour to Bromo, participants were invited to enjoy the mountain atmosphere while strengthening bonds and camaraderie in a relaxed, enjoyable setting.",
+        "The journey to Bromo was filled with simple yet memorable moments of togetherness. From enjoying the trip and chatting with colleagues to witnessing the breathtaking beauty of the Mount Bromo area firsthand, the experience was truly unforgettable. The event also provided a space for everyone to get to know each other better, improve communication, and foster a stronger sense of family within the Reddmas Group.",
+        "Through the 2023 Bromo Annual Gathering, Reddmas Group hopes that the camaraderie built during the trip will serve as a source of positive energy for tackling future activities and challenges. More than just a leisure trip, the event offered a chance to take a break, share stories, and create lasting memories together. May this spirit of togetherness and unity continue to grow and remain an integral part of Reddmas Group's journey ahead."
+      ]
+    },
+    "annual-gathering-sentul-2023": {
+      "tag": "Annual Gathering",
+      "title": "Annual Gathering Sentul Tour 2023",
+      "excerpt": "To strengthen togetherness and boost morale, the company successfully held its 2023 Annual Gathering at Sentul Richie Garden.",
+      "content": [
+        "To strengthen togetherness and boost morale, the company successfully held its 2023 Annual Gathering at Sentul Richie Garden. This event served as a special occasion for all employees to step away from their daily work routines and enjoy quality time with colleagues in a relaxed and cheerful atmosphere.",
+        "The event began with a gathering of all employees, who were welcomed by the cool, lush natural surroundings of Sentul. Interactions between divisions felt warmer, fostering closer and more intimate communication. This occasion was used to reinforce a sense of family and solidarity within the workplace.",
+        "The excitement grew with various interactive games involving all participants. These games not only provided laughter and entertainment but also fostered teamwork, sportsmanship, and unity among employees. Participant enthusiasm was evident in the high energy and active involvement during every game session. As the highlight of the event, the organizing committee distributed various attractive door prizes, further adding to the joyful atmosphere. The prize distribution was one of the most anticipated moments, bringing surprises and happiness to the winners.",
+        "Through this 2023 Annual Gathering, the company hopes to build stronger working relationships and a positive work environment, while inspiring renewed motivation among all employees to face future challenges. The sense of togetherness fostered at Sentul Richie Garden has become a cherished memory and a solid foundation for continued growth and development together."
+      ]
+    },
     "qurban-2025": {
       "tag": "CSR",
       "title": "Distributing Qurban Animals 2025",

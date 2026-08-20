@@ -15,6 +15,7 @@ const SLIDE_DURATION = 6000;
 const TRANSITION_DURATION = 0.9; // dipakai BERSAMA oleh background & content
 const WORD_STAGGER = 0.08;
 const WORD_DURATION = 0.55;
+const SWIPE_THRESHOLD = 45; // px, jarak minimum drag horizontal dianggap swipe
 
 // Posisi konten per slide (0-indexed). "center" | "left"
 const SLIDE_ALIGN: ("center" | "left")[] = [
@@ -57,10 +58,10 @@ function AnimatedHeadline({
             return (
               <motion.span
                 key={idx}
-                className="mr-3 inline-block font-extrabold uppercase tracking-wide drop-shadow-lg"
+                className="mr-2.5 inline-block font-extrabold uppercase tracking-wide drop-shadow-lg md:mr-3"
                 style={{
                   color: accentIndices.includes(idx) ? accentColor : "#ffffff",
-                  fontSize: "clamp(2rem, 5vw, 3.75rem)",
+                  fontSize: "clamp(1.75rem, 7vw, 3.75rem)",
                   lineHeight: 1.15,
                   textShadow: "0 2px 16px rgba(0,0,0,0.45)",
                 }}
@@ -104,12 +105,11 @@ function SlideContent({
   const bodyDelay = reduceMotion ? 0.1 : 0.2 + wordCount * WORD_STAGGER + 0.1;
   const ctaDelay = bodyDelay + 0.12;
   const words = slide.headlineKeys.map((k) => t(k));
-
   const isLeft = align === "left";
 
   return (
     <div
-      className={`relative z-10 flex flex-col px-6 ${
+      className={`relative z-10 flex flex-col px-1 ${
         isLeft ? "items-start" : "items-center text-center"
       }`}
     >
@@ -124,7 +124,7 @@ function SlideContent({
 
       {/* Divider */}
       <motion.div
-        className="my-6 h-px"
+        className="my-5 h-px md:my-6"
         style={{ background: `rgba(${slide.accentColorRgb}, 0.65)` }}
         initial={{ width: 0, opacity: 0 }}
         animate={{ width: 48, opacity: 1 }}
@@ -137,8 +137,8 @@ function SlideContent({
 
       {/* Body */}
       <motion.p
-        className={`text-base font-light leading-relaxed text-white/70 md:text-lg ${
-          isLeft ? "max-w-lg" : "max-w-3xl"
+        className={`text-sm font-light leading-relaxed text-white/70 md:text-lg ${
+          isLeft ? "max-w-xs sm:max-w-lg" : "max-w-xs sm:max-w-3xl"
         }`}
         style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}
         initial={{ opacity: 0, y: 10 }}
@@ -156,7 +156,7 @@ function SlideContent({
       {showCta && (
         <MotionLink
           href={slide.ctaHref}
-          className="mt-7 flex items-center gap-2.5 rounded-full border px-8 py-3.5 text-sm font-semibold tracking-wide backdrop-blur-sm transition-all duration-200"
+          className="mt-6 flex items-center gap-2.5 rounded-full border px-6 py-3 text-xs font-semibold tracking-wide backdrop-blur-sm transition-all duration-200 md:mt-7 md:px-8 md:py-3.5 md:text-sm"
           style={{
             color: "#ffffff",
             borderColor: `rgba(${slide.accentColorRgb}, 0.45)`,
@@ -198,11 +198,11 @@ function ArrowBtn({
       type="button"
       onClick={onClick}
       aria-label={dir === "prev" ? "Previous slide" : "Next slide"}
-      className="group flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition-all duration-200 hover:border-white/40 hover:bg-black/40"
+      className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition-all duration-200 hover:border-white/40 hover:bg-black/40 md:h-12 md:w-12"
     >
       <motion.span
         whileHover={{ x: dir === "prev" ? -2 : 2 }}
-        className="text-lg leading-none"
+        className="text-base leading-none md:text-lg"
         aria-hidden="true"
       >
         {dir === "prev" ? "←" : "→"}
@@ -223,6 +223,9 @@ export default function HeroCarousel() {
   const rafRef = useRef<number | null>(null);
   const startRef = useRef<number | null>(null);
   const pausedAtRef = useRef<number>(0);
+
+  // ── Touch/swipe tracking ──
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
 
   const goTo = useCallback((idx: number) => {
     setCurrent(idx);
@@ -271,11 +274,36 @@ export default function HeroCarousel() {
   }, [current, isHovered]);
 
   // ── Preload gambar slide berikutnya ──
-  useEffect(() => {
-    const nextIdx = (current + 1) % slides.length;
-    const img = new window.Image();
-    img.src = slides[nextIdx].imageSrc;
-  }, [current]);
+
+  // ── Swipe handlers (mobile) ──
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStartRef.current = { x: t.clientX, y: t.clientY };
+    setIsHovered(true);
+    pausedAtRef.current = progress;
+    startRef.current = null;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const start = touchStartRef.current;
+    setIsHovered(false);
+    startRef.current = null;
+    if (!start) return;
+
+    const end = e.changedTouches[0];
+    const deltaX = end.clientX - start.x;
+    const deltaY = end.clientY - start.y;
+    touchStartRef.current = null;
+
+    // Abaikan kalau gerakan lebih vertikal (user lagi scroll halaman)
+    if (Math.abs(deltaX) < Math.abs(deltaY)) return;
+
+    if (deltaX > SWIPE_THRESHOLD) {
+      prev();
+    } else if (deltaX < -SWIPE_THRESHOLD) {
+      next();
+    }
+  };
 
   const slide = slides[current];
   const align = SLIDE_ALIGN[current] ?? "center";
@@ -285,7 +313,7 @@ export default function HeroCarousel() {
   return (
     <section
       className="group/carousel absolute top-0 w-full overflow-hidden"
-      style={{ height: "100dvh", minHeight: 480 }}
+      style={{ height: "100dvh", minHeight: 480, touchAction: "pan-y" }}
       aria-label="Hero carousel"
       aria-roledescription="carousel"
       onMouseEnter={() => {
@@ -297,6 +325,8 @@ export default function HeroCarousel() {
         setIsHovered(false);
         startRef.current = null;
       }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <AnimatePresence mode="sync">
         <motion.div
@@ -313,7 +343,8 @@ export default function HeroCarousel() {
             alt=""
             fill
             quality={70}
-            priority={current === 0}
+            priority
+            fetchPriority={current === 0 ? "high" : "auto"} // opsional: cuma slide pertama yang "high"
             className="object-cover"
             style={{ objectPosition: "center 30%" }}
             sizes="100vw"
@@ -355,7 +386,7 @@ export default function HeroCarousel() {
           <div
             className={`absolute inset-0 flex flex-col justify-center ${
               isLeft
-                ? "items-start px-12 md:px-24 lg:px-32"
+                ? "items-start px-6 sm:px-10 md:px-24 lg:px-32"
                 : "items-center px-6"
             }`}
           >
@@ -372,57 +403,64 @@ export default function HeroCarousel() {
         </motion.div>
       </AnimatePresence>
 
-      {/* ── Progress bar ── */}
-      <div
-        className="absolute left-0 top-0 z-30 h-0.5 bg-reddmas-red"
-        style={{ width: `${progress}%`, transition: "none" }}
-        role="progressbar"
-        aria-valuenow={Math.round(progress)}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      />
-
-      {/* ── Side arrows ── */}
-      <div className="absolute left-4 top-1/2 z-20 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover/carousel:opacity-100 md:left-8">
+      {/* ── Side arrows — selalu tampil di mobile, hover-reveal di desktop ── */}
+      <div className="absolute left-2 top-1/2 z-20 -translate-y-1/2 opacity-80 transition-opacity duration-300 md:left-8 md:opacity-0 md:group-hover/carousel:opacity-100">
         <ArrowBtn dir="prev" onClick={prev} />
       </div>
-      <div className="absolute right-4 top-1/2 z-20 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover/carousel:opacity-100 md:right-8">
+      <div className="absolute right-2 top-1/2 z-20 -translate-y-1/2 opacity-80 transition-opacity duration-300 md:right-8 md:opacity-0 md:group-hover/carousel:opacity-100">
         <ArrowBtn dir="next" onClick={next} />
       </div>
 
-      {/* ── Bottom controls: dots + counter ── */}
-      <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 flex-col items-center gap-4">
-        <div
-          className="flex items-center gap-2.5"
-          role="tablist"
-          aria-label="Slide navigation"
-        >
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              role="tab"
-              aria-selected={i === current}
-              aria-label={`Slide ${i + 1}`}
-              onClick={() => goTo(i)}
-              className="transition-all duration-300"
-              style={{
-                height: 4,
-                width: i === current ? 32 : 8,
-                borderRadius: 2,
-                background:
-                  i === current ? "#d23439" : "rgba(255,255,255,0.35)",
-              }}
-            />
-          ))}
+      {/* ── Bottom index bar: counter + segmented progress ── */}
+      <div className="absolute inset-x-0 bottom-0 z-20 border-t border-white/10 backdrop-blur-[2px]">
+        <div className="mx-auto flex max-w-7xl items-stretch">
+          {/* Counter */}
+          <div className="flex shrink-0 items-center gap-2 border-r border-white/10 px-3.5 py-3 font-mono text-[11px] tracking-[0.15em] text-white/40 md:gap-2.5 md:px-8 md:py-4 md:text-xs">
+            <span className="text-white">
+              {String(current + 1).padStart(2, "0")}
+            </span>
+            <span className="text-white/25">/</span>
+            <span>{String(slides.length).padStart(2, "0")}</span>
+          </div>
+
+          {/* Segmented progress index — pengganti dots */}
+          <div
+            className="flex flex-1 items-stretch"
+            role="tablist"
+            aria-label="Slide navigation"
+          >
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                role="tab"
+                aria-selected={i === current}
+                aria-label={`Slide ${i + 1}`}
+                onClick={() => goTo(i)}
+                className="group relative flex-1 border-r border-white/10 outline-none last:border-r-0"
+              >
+                {/* Track (belum terisi) */}
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white/15" />
+                {/* Fill — penuh untuk slide yang sudah lewat, animasi progress untuk yang aktif */}
+                <span
+                  className="absolute inset-x-0 bottom-0 h-0.5 bg-reddmas-red transition-[width] duration-100 ease-linear"
+                  style={{
+                    width:
+                      i < current
+                        ? "100%"
+                        : i === current
+                          ? `${progress}%`
+                          : "0%",
+                  }}
+                />
+                <span className="hidden select-none px-2 py-4 text-center font-mono text-[10px] tracking-[0.2em] text-white/30 transition-colors duration-200 group-hover:text-white/70 sm:block">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="block h-11 sm:hidden" />
+              </button>
+            ))}
+          </div>
         </div>
-        <span
-          className="text-[11px] font-medium tracking-[2px] text-white/50"
-          aria-live="polite"
-        >
-          {String(current + 1).padStart(2, "0")} /{" "}
-          {String(slides.length).padStart(2, "0")}
-        </span>
       </div>
     </section>
   );

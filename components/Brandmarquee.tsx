@@ -46,10 +46,6 @@ export default function BrandMarquee({
   const x = useMotionValue(0);
   const trackRef = useRef<HTMLDivElement>(null);
   const halfWidthRef = useRef(0); // lebar 1 set brand (sebelum diduplikasi)
-
-  // Duplikat list 2x supaya loop terlihat mulus: track kedua menyusul
-  // persis di belakang track pertama. Saat x mencapai -halfWidth, reset
-  // ke 0 — karena track kedua identik, mata tidak menangkap "patahan".
   const track = [...brands, ...brands];
 
   useEffect(() => {
@@ -78,21 +74,10 @@ export default function BrandMarquee({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Fade gradient kiri — logo terasa "menghilang" halus, bukan terpotong */}
-      <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 md:w-32"
-        style={{
-          background:
-            "linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%)",
-        }}
-      />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-zinc-50 to-transparent md:w-32 dark:from-zinc-950" />
+
       {/* Fade gradient kanan */}
-      <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 md:w-32"
-        style={{
-          background:
-            "linear-gradient(to left, white 0%, rgba(255,255,255,0) 100%)",
-        }}
-      />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-zinc-50 to-transparent md:w-32 dark:from-zinc-950" />
 
       <div className="overflow-hidden">
         <motion.div
