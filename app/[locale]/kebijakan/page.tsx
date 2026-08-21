@@ -43,7 +43,7 @@ const PrivacyPolicy: React.FC = () => {
         1. Pendahuluan
       </h2>
       <p style={{ marginBottom: "1rem" }}>
-        PT. Reddmas Group (`&quot;`kami`&quot;) mengelola situs reddmasgroup.com
+        PT. Reddmas Group (&quot;kami&quot;) mengelola situs reddmasgroup.com
         dan berkomitmen melindungi privasi setiap pengunjung dan pelanggan yang
         mengakses situs ini. Kebijakan ini menjelaskan data apa yang kami
         kumpulkan saat Anda mengunjungi situs, untuk apa data itu digunakan —
@@ -476,7 +476,7 @@ const PrivacyPolicy: React.FC = () => {
       <p style={{ marginBottom: "1rem" }}>
         Kami dapat memperbarui kebijakan ini sewaktu-waktu. Perubahan signifikan
         akan diberitahukan melalui notice di halaman ini, dan tanggal
-        `&quot;`Berlaku sejak `&quot;` di atas akan diperbarui.
+        &quot;Berlaku sejak &quot; di atas akan diperbarui.
       </p>
 
       <div

@@ -171,7 +171,7 @@ function Toggle({
       disabled={disabled}
       onClick={() => onChange?.(!checked)}
       className={`relative h-6 w-11 shrink-0 rounded-full transition-colors duration-200 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary ${
-        checked ? "bg-primary" : "bg-neutral-300 dark:bg-neutral-700"
+        checked ? "bg-reddmas-blue" : "bg-neutral-300 dark:bg-neutral-700"
       } ${disabled ? "cursor-not-allowed opacity-60" : "cursor-pointer"}`}
     >
       <span
@@ -190,8 +190,6 @@ function Toggle({
 export default function CookieConsent({ gaId }: { gaId?: string }) {
   const t = useTranslations("Cookies");
 
-  // Authoritative, persisted consent — drives GA gating for every visitor,
-  // including returning ones on page load, before they've touched anything.
   const storedConsent = useSyncExternalStore(
     subscribeToConsent,
     getStoredConsentSnapshot,
@@ -200,10 +198,6 @@ export default function CookieConsent({ gaId }: { gaId?: string }) {
   const appliedConsent = storedConsent ?? DEFAULT_CONSENT;
   const hasConsented = storedConsent !== null;
 
-  // Draft toggle state for the preferences panel. The panel is only ever
-  // shown to first-time visitors (see the `visible` effect below — it never
-  // becomes true once hasConsented is true), so it's safe to always start
-  // from DEFAULT_CONSENT rather than mirror appliedConsent.
   const [draft, setDraft] = useState<ConsentState>(DEFAULT_CONSENT);
   const [visible, setVisible] = useState(false);
   const [expanded, setExpanded] = useState(false);
@@ -252,7 +246,7 @@ export default function CookieConsent({ gaId }: { gaId?: string }) {
           <div className="w-full max-w-2xl origin-bottom rounded-2xl border border-neutral-200/80 bg-white/95 shadow-2xl shadow-black/10 backdrop-blur-xl dark:border-neutral-800 dark:bg-neutral-900/95">
             <div className="p-5 sm:p-6">
               <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-reddmas-blue/10 text-primary">
                   <CookieIcon className="h-5 w-5" />
                 </span>
                 <div className="min-w-0">
@@ -355,7 +349,7 @@ export default function CookieConsent({ gaId }: { gaId?: string }) {
                     <button
                       type="button"
                       onClick={handleSavePreferences}
-                      className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm shadow-primary/30 transition-transform hover:brightness-110 active:scale-[0.98]"
+                      className="rounded-lg bg-reddmas-blue px-4 py-2 text-sm font-medium text-white shadow-sm shadow-primary/30 transition-transform hover:brightness-110 active:scale-[0.98]"
                     >
                       {t("savePreferences")}
                     </button>
@@ -363,7 +357,7 @@ export default function CookieConsent({ gaId }: { gaId?: string }) {
                     <button
                       type="button"
                       onClick={handleAcceptAll}
-                      className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm shadow-primary/30 transition-transform hover:brightness-110 active:scale-[0.98]"
+                      className="rounded-lg bg-reddmas-blue px-4 py-2 text-sm font-medium text-white shadow-sm shadow-primary/30 transition-transform hover:brightness-110 active:scale-[0.98]"
                     >
                       {t("acceptAll")}
                     </button>

@@ -14,6 +14,7 @@
 @theme {
   --color-reddmas-red: #d23439;
   --color-reddmas-dark: #0f172b;
+  --color-reddmas-blue: #0d6efd;
 }
 
 @media (prefers-color-scheme: dark) {

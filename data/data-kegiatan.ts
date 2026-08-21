@@ -20,7 +20,7 @@ export const kegiatanperusahaan: KegiatanItem[] = [
     id: "annual-gathering-bromo-2023",
     slug: "annual-gathering-bromo-2023",
     date: "2023-11-20",
-    image: "/Kegiatan/Annual-gathering-bromo-2023/annual2023-image-01.jpg",
+    image: "/Kegiatan/Annual-gathering-bromo-2023/image-6.JPG",
     updatedAt: "2023-11-20",
   },
   {
