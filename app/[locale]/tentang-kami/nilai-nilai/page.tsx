@@ -93,7 +93,7 @@ export default async function Nilai_NilaiPage() {
 
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 pt-48 sm:pt-95 pb-20">
           <div className="space-y-6 mb-12">
-            <h2 className="text-3xl font-bold text-reddmas-dark md:text-4xl">
+            <h2 className="text-3xl font-bold text-foreground md:text-4xl">
               {t("corevalues.heading")}
             </h2>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed font-normal">

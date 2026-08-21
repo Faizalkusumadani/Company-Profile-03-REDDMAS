@@ -153,7 +153,7 @@ export default async function InformationDetailPage({
 
             {/* Kontak */}
             <div className="pt-8 mt-4 border-t border-gray-200 space-y-6">
-              <p className="text-reddmas-dark font-semibold text-sm">
+              <p className="text-foreground font-semibold text-sm">
                 {contactLabel}
               </p>
 

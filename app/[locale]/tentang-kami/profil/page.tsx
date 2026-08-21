@@ -64,7 +64,7 @@ export default async function ProfilPage() {
           {/* Konten utama */}
           <main className="flex-1 space-y-15 py-10">
             <section id="Profil-perusahaan">
-              <h2 className="text-3xl md:text-4xl font-bold text-reddmas-dark leading-tight tracking-tight mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight tracking-tight mb-6">
                 {t("nav.profil")}
               </h2>
               <div className="flex justify-center relative mb-8">
@@ -86,7 +86,7 @@ export default async function ProfilPage() {
               </div>
             </section>
             <section id="history">
-              <h1 className="text-3xl md:text-4xl font-bold text-reddmas-dark leading-tight tracking-tight mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight tracking-tight mb-6">
                 {t("nav.histori")}
               </h1>
               <div className="flex justify-center relative mb-8">

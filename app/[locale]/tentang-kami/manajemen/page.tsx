@@ -73,7 +73,7 @@ export default async function ManajemenPage() {
                   <div className="md:col-span-2 flex flex-col justify-center space-y-4">
                     {/* Nomor urut + nama */}
                     <div className="text-center md:text-left">
-                      <h2 className="text-2xl sm:text-3xl font-bold text-reddmas-dark mt-0.5 leading-tight">
+                      <h2 className="text-2xl sm:text-3xl font-bold text-foreground mt-0.5 leading-tight">
                         {item.name}
                       </h2>
                       {/* Garis aksen di bawah nama */}

@@ -56,7 +56,7 @@ export default async function KontakPage() {
           {/* ================= Lokasi Kami ================= */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-reddmas-dark tracking-tight">
+              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground tracking-tight">
                 {t("kontak.location_heading")}
               </h2>
               <p className="mt-3 text-gray-600 max-w-5xl">
@@ -79,7 +79,7 @@ export default async function KontakPage() {
                         <p className="text-xs font-normal tracking-wide text-gray-400 hover:text-reddmas-red">
                           {name}
                         </p>
-                        <p className="mt-0.5 text-base text-reddmas-dark leading-relaxed">
+                        <p className="mt-0.5 text-base text-foreground leading-relaxed">
                           {loc.value}
                         </p>
                       </div>
@@ -128,7 +128,7 @@ export default async function KontakPage() {
 
           {/* ================= Form Kontak ================= */}
           <div className="mb-4 space-y-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
               {t("kontak.hero_heading_01")} {""}
               <span className="text-reddmas-red">
                 {t("kontak.hero_heading_02")}

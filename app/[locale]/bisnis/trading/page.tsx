@@ -83,7 +83,7 @@ export default async function TradingPage() {
                         className="object-contain p-8"
                       />
                     </div>
-                    <p className="mt-2 text-sm text-gray-600 text-center group-hover:text-reddmas-red transition-colors">
+                    <p className="mt-2 text-sm text-gray-400 text-center group-hover:text-reddmas-red transition-colors">
                       {brand.name}
                     </p>
                   </Link>

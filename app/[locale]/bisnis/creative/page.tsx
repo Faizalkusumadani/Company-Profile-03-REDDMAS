@@ -67,7 +67,7 @@ export default async function TradingPage() {
           {/* Konten utama */}
           <main className="flex-1 space-y-15 py-10">
             <section id="content">
-              <div className="space-y-6 text-gray-500 text-sm md:text-base leading-relaxed font-[350]">
+              <div className="space-y-6 text-gray-600 text-sm md:text-base leading-relaxed font-[350]">
                 <p>{t("creative.desc_01")}</p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
@@ -86,7 +86,7 @@ export default async function TradingPage() {
                         className="object-contain p-8"
                       />
                     </div>
-                    <p className="mt-2 text-sm text-gray-600 text-center group-hover:text-reddmas-red transition-colors">
+                    <p className="mt-2 text-sm text-gray-400 text-center group-hover:text-reddmas-red transition-colors">
                       {brand.name}
                     </p>
                   </Link>

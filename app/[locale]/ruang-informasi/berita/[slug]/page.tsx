@@ -94,7 +94,7 @@ export default async function BeritaDetailPage({ params }: Props) {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <article className="order-1 lg:col-span-2">
-                <h1 className="text-2xl md:text-3xl font-bold text-reddmas-dark mb-6">
+                <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                   {text.title}
                 </h1>
                 <p className="text-gray-400 text-xs sm:text-sm mb-6">

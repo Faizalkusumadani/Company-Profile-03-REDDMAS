@@ -101,7 +101,7 @@ export default async function BeritaPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-reddmas-dark mb-4 group-hover:text-reddmas-red transition-colors duration-300 leading-snug">
+                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-foreground mb-4 group-hover:text-reddmas-red transition-colors duration-300 leading-snug">
                       {featuredText.title}
                     </h2>
 
@@ -109,7 +109,7 @@ export default async function BeritaPage() {
                       {featuredText.excerpt}
                     </p>
 
-                    <div className="inline-flex items-center gap-2 text-sm font-semibold text-reddmas-dark group-hover:text-reddmas-red transition-colors duration-300">
+                    <div className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-reddmas-red transition-colors duration-300">
                       <span>{t("readMore")}</span>
                       <svg
                         className="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
@@ -185,7 +185,7 @@ export default async function BeritaPage() {
                         </p>
 
                         {/* Minimalist Link */}
-                        <div className="inline-flex items-center gap-2 text-sm font-semibold text-reddmas-dark group-hover:text-reddmas-red transition-colors duration-300">
+                        <div className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-reddmas-red transition-colors duration-300">
                           <span>{t("readMore")}</span>
                           <svg
                             className="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"

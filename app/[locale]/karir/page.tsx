@@ -48,7 +48,7 @@ export default async function KarirPage() {
       <section id="karir">
         <div className="max-w-7xl w-full mx-auto px-4 pt-50 md:pt-98 pb-20 space-y-10">
           <div className="max-w-2xl">
-            <h1 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-reddmas-dark">
+            <h1 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-foreground">
               {t("karir.header_karir")}
             </h1>
             <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-600">

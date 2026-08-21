@@ -29,7 +29,7 @@ export default function HomePage() {
           <p className="text-xs font-semibold tracking-[0.15em] uppercase text-reddmas-red mb-2">
             {t("tag_lini")}
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight mb-3">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight mb-3">
             {t("header_lini")}
           </h2>
           <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-3xl mb-10">
@@ -178,7 +178,7 @@ export default function HomePage() {
               {t("tag_reddmas")}
             </p>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
               {t("header_reddmas")}
             </h2>
 
@@ -208,7 +208,7 @@ export default function HomePage() {
               <p className="text-xs font-semibold tracking-[0.15em] uppercase text-reddmas-red mb-2">
                 {t("berita.tag_news") || "Update Terbaru"}
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight">
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                 {t("berita.header_news") || "Berita & Artikel"}
               </h2>
             </div>
@@ -265,7 +265,7 @@ export default function HomePage() {
                     </p>
 
                     {/* Minimalist Link */}
-                    <div className="inline-flex items-center gap-2 text-sm font-semibold text-reddmas-dark group-hover:text-reddmas-red transition-colors duration-300">
+                    <div className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-reddmas-red transition-colors duration-300">
                       <span>{t("readMore")}</span>
                       <svg
                         className="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
@@ -300,7 +300,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold tracking-[0.15em] uppercase text-red-700 mb-2">
               {t("tag_bromo")}
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
               {t("header_bromo")}
             </h2>
 
@@ -331,7 +331,7 @@ export default function HomePage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[3px] text-reddmas-red">
               {t("tag_brand")}
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold leading-snug text-reddmas-dark">
+            <h2 className="text-3xl md:text-5xl font-bold leading-snug text-foreground">
               {t("header_brand")}
             </h2>
             <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-10">
@@ -349,7 +349,7 @@ export default function HomePage() {
           <p className="text-xs font-semibold tracking-[0.15em] uppercase text-red-700 mb-2">
             {t("tag_principle")}
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-reddmas-dark leading-tight mb-3">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight mb-3">
             {t("header_principle")}
           </h2>
           <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-3xl mb-10">
