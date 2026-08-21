@@ -175,7 +175,7 @@ export default async function BeritaPage() {
                         </div>
 
                         {/* Title */}
-                        <h4 className="text-xl font-medium tracking-tight text-gray-950 mb-3 group-hover:text-reddmas-red transition-colors duration-300 line-clamp-2">
+                        <h4 className="text-xl font-medium tracking-tight text-foreground mb-3 group-hover:text-reddmas-red transition-colors duration-300 line-clamp-2">
                           {text.title}
                         </h4>
 

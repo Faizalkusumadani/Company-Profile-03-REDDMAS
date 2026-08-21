@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { SerwistProvider } from "@serwist/turbopack/react";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Pageloader from "@/components/Pageloader";
+import CookieConsent from "@/components/Cookie";
 import { Poppins } from "next/font/google";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
@@ -15,7 +15,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 // ─── Site Config ──────────────────────────────────────────────────────────────
@@ -188,6 +188,7 @@ export default async function LocaleLayout({
       <Navbar locale={locale as Locale} />
       <main className="min-h-screen">{children}</main>
       <Footer />
+      <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
     </NextIntlClientProvider>
   );
 
@@ -204,9 +205,6 @@ export default async function LocaleLayout({
           <SerwistProvider swUrl="/serwist/sw.js">{appBody}</SerwistProvider>
         ) : (
           appBody
-        )}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}
       </body>
     </html>

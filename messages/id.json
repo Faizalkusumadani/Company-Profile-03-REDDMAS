@@ -460,6 +460,29 @@
       }
     }
   },
+  "Cookies": {
+    "ariaLabel": "Pengaturan cookie",
+    "title": "Kami menggunakan cookie",
+    "description": "Kami menggunakan cookie untuk meningkatkan pengalaman kamu, menganalisis trafik, dan menampilkan konten yang relevan.",
+    "learnMore": "Pelajari lebih lanjut",
+    "managePreferences": "Atur preferensi",
+    "hidePreferences": "Sembunyikan preferensi",
+    "acceptAll": "Terima semua",
+    "rejectAll": "Tolak semua",
+    "savePreferences": "Simpan preferensi",
+    "necessary": {
+      "title": "Esensial",
+      "description": "Diperlukan agar situs berfungsi dengan baik. Selalu aktif."
+    },
+    "analytics": {
+      "title": "Analitik",
+      "description": "Membantu kami memahami cara pengunjung menggunakan situs."
+    },
+    "marketing": {
+      "title": "Pemasaran",
+      "description": "Digunakan untuk menampilkan iklan yang lebih relevan."
+    }
+  },
   "kontak": {
     "location_heading": "Lokasi Kami",
     "desc_heading": "Tim kami siap membantu menjawab pertanyaan seputar produk dan layanan Reddmas Group",
