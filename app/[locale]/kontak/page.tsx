@@ -38,7 +38,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function KontakPage() {
   const t = await getTranslations();
-  const locale = await getLocale();
 
   return (
     <div className="w-full py-20">
@@ -60,7 +59,7 @@ export default async function KontakPage() {
               <h2 className="mt-4 text-3xl md:text-5xl font-bold text-reddmas-dark tracking-tight">
                 {t("kontak.location_heading")}
               </h2>
-              <p className="mt-3 text-gray-500 max-w-5xl">
+              <p className="mt-3 text-gray-600 max-w-5xl">
                 {t("kontak.desc_heading")}
               </p>
 
@@ -80,7 +79,7 @@ export default async function KontakPage() {
                         <p className="text-xs font-normal tracking-wide text-gray-400 hover:text-reddmas-red">
                           {name}
                         </p>
-                        <p className="mt-0.5 text-base text-gray-800 leading-relaxed">
+                        <p className="mt-0.5 text-base text-reddmas-dark leading-relaxed">
                           {loc.value}
                         </p>
                       </div>
@@ -114,7 +113,7 @@ export default async function KontakPage() {
 
             {/* Kolom kanan: image talent, natural tanpa overlay */}
             <div className="order-1 lg:order-2">
-              <div className="relative aspect-4/5 w-full max-w-md mx-auto rounded-3xl overflow-hidden bg-gray-50">
+              <div className="relative aspect-4/5 w-full max-w-md mx-auto rounded-3xl overflow-hidden">
                 <Image
                   src="/Talent/image_costumer_039.png"
                   alt="Customer Service Reddmas Group"
@@ -135,7 +134,7 @@ export default async function KontakPage() {
                 {t("kontak.hero_heading_02")}
               </span>
             </h2>
-            <p className="mt-3 text-gray-500 leading-relaxed max-w-sm">
+            <p className="mt-3 text-gray-600 leading-relaxed max-w-sm">
               {t("kontak.hero_subtext")}
             </p>
             {/* Form */}

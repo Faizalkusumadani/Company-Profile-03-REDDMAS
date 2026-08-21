@@ -59,7 +59,7 @@ export default async function JobDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const job = getJobBySlug(slug); // data struktural: location, type, postedDate, deadline
+  const job = getJobBySlug(slug);
 
   if (!job) notFound();
 
@@ -104,7 +104,7 @@ export default async function JobDetailPage({
                   <span className="inline-block rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-reddmas-red mb-2">
                     {department}
                   </span>
-                  <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  <h1 className="text-2xl md:text-3xl font-bold text-reddmas-dark">
                     {title}
                   </h1>
                 </div>
@@ -112,14 +112,14 @@ export default async function JobDetailPage({
                   className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
                     open
                       ? "bg-green-50 text-green-700"
-                      : "bg-gray-100 text-gray-500"
+                      : "bg-gray-100 text-gray-600"
                   }`}
                 >
                   {open ? t("karir.status_open") : t("karir.status_closed")}
                 </span>
               </div>
 
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-600">
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-400">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="h-4 w-4" />
                   {job.location}
@@ -151,7 +151,7 @@ export default async function JobDetailPage({
 
               <div className="mt-10 space-y-8">
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900">
+                  <h2 className="text-lg font-semibold text-reddmas-dark">
                     {t("karir.content_h1_01")}
                   </h2>
                   <p className="mt-2 text-gray-600 leading-relaxed">
@@ -159,7 +159,7 @@ export default async function JobDetailPage({
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900">
+                  <h2 className="text-lg font-semibold text-reddmas-dark">
                     {t("karir.content_h1_02")}
                   </h2>
                   <ul className="mt-2 space-y-2 list-disc list-outside pl-5 text-gray-600">
@@ -169,7 +169,7 @@ export default async function JobDetailPage({
                   </ul>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900">
+                  <h2 className="text-lg font-semibold text-reddmas-dark">
                     {t("karir.content_h1_03")}
                   </h2>
                   <ul className="mt-2 space-y-2 list-disc list-outside pl-5 text-gray-600">
@@ -180,7 +180,7 @@ export default async function JobDetailPage({
                 </div>
                 {benefits && benefits.length > 0 && (
                   <div>
-                    <h2 className="text-lg font-semibold text-gray-900">
+                    <h2 className="text-lg font-semibold text-reddmas-dark">
                       {t("karir.content_h1_04")}
                     </h2>
                     <ul className="mt-2 space-y-2 list-disc list-inside text-gray-600">
@@ -215,7 +215,7 @@ export default async function JobDetailPage({
 
                 {otherJobs.length > 0 && (
                   <div className="rounded-xl border border-gray-200 p-6">
-                    <h3 className="text-sm font-semibold text-gray-900 mb-4">
+                    <h3 className="text-sm font-semibold text-reddmas-dark mb-4">
                       {t("karir.header_side")}
                     </h3>
                     <ul className="space-y-4">
@@ -225,10 +225,10 @@ export default async function JobDetailPage({
                             href={`/karir/${j.slug}`}
                             className="group block rounded-lg p-3 -mx-3 hover:bg-gray-50 transition-colors"
                           >
-                            <p className="text-sm font-medium text-gray-900 group-hover:text-reddmas-red transition-colors">
+                            <p className="text-sm font-medium text-reddmas-dark group-hover:text-reddmas-red transition-colors">
                               {t(`karir.jobs.${j.slug}.title`)}
                             </p>
-                            <p className="mt-1 text-xs text-gray-500">
+                            <p className="mt-1 text-xs text-gray-400">
                               {j.location}
                             </p>
                           </Link>

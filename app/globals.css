@@ -3,24 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --reddmas-dark: #0f172b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-reddmas-dark: var(--reddmas-dark); /* sekarang ikut dinamis */
   --font-sans: var(--font-poppins);
 }
 
 @theme {
-  --color-reddmas-red: #d23439;
-  --color-reddmas-dark: #0f172b;
+  --color-reddmas-red: #d23439; /* tetap statis, gak perlu ganti warna di dark mode */
 }
 
-/* ── Override untuk dark mode ── */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --reddmas-dark: #fafafa;
   }
 }
 

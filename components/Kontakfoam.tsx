@@ -76,7 +76,7 @@ export default function Formcontact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Nama Lengkap */}
           <div>
-            <label className="block text-sm text-gray-500 mb-1">
+            <label className="block text-sm text-gray-600 mb-1">
               {t("kontak.form.name_label")}*
             </label>
             <input type="text" {...register("name")} className={inputClass} />
@@ -87,7 +87,7 @@ export default function Formcontact() {
 
           {/* Alamat Email */}
           <div>
-            <label className="block text-sm text-gray-500 mb-1">
+            <label className="block text-sm text-gray-600 mb-1">
               {t("kontak.form.email_label")}*
             </label>
             <input type="email" {...register("email")} className={inputClass} />
@@ -100,7 +100,7 @@ export default function Formcontact() {
 
           {/* Nomor Telepon */}
           <div>
-            <label className="block text-sm text-gray-500 mb-1">
+            <label className="block text-sm text-gray-600 mb-1">
               {t("kontak.form.contact_label")}* (Ex.+62812 7777 1111)
             </label>
             <input type="tel" {...register("phone")} className={inputClass} />
@@ -113,7 +113,7 @@ export default function Formcontact() {
 
           {/* Kota Anda */}
           <div>
-            <label className="block text-sm text-gray-500 mb-1">
+            <label className="block text-sm text-gray-600 mb-1">
               {t("kontak.form.country_label")}*
             </label>
             <input
@@ -131,7 +131,7 @@ export default function Formcontact() {
 
         {/* Pesan */}
         <div>
-          <label className="block text-sm text-gray-500 pb-2 mb-2">
+          <label className="block text-sm text-gray-600 pb-2 mb-2">
             {t("kontak.form.message_label")}...
           </label>
           <textarea
@@ -190,7 +190,7 @@ export default function Formcontact() {
             <h2 className="text-center text-2xl font-bold">
               Pesan Anda berhasil dikirim!
             </h2>
-            <p className="text-center text-base text-gray-500 pt-2">
+            <p className="text-center text-base text-gray-600 pt-2">
               Terima kasih. Tim kami akan segera menghubungi Anda.
             </p>
             <div className="flex justify-center pt-4">
@@ -230,7 +230,7 @@ export default function Formcontact() {
             <h2 className="text-center text-2xl font-bold">
               Terjadi kesalahan!
             </h2>
-            <p className="text-center text-base text-gray-500 pt-2">
+            <p className="text-center text-base text-gray-600 pt-2">
               Pesan gagal terkirim. Silakan coba lagi.
             </p>
             <div className="flex justify-center pt-4">

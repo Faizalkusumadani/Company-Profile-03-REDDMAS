@@ -22,10 +22,10 @@ export default async function JobCard({ job, locale }: JobCardProps) {
     >
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-reddmas-red transition-colors">
+          <h3 className="text-lg font-semibold text-reddmas-dark group-hover:text-reddmas-red transition-colors">
             {title}
           </h3>
-          <p className="mt-1 text-sm text-gray-500">{department}</p>
+          <p className="mt-1 text-sm text-gray-400">{department}</p>
         </div>
         <span
           className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${

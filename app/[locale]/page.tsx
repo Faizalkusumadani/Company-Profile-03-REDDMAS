@@ -15,8 +15,6 @@ import { MoveRight } from "lucide-react";
 
 export default function HomePage() {
   const t = useTranslations();
-  // Ambil objek teks berita (tag/title/excerpt/content) dari messages,
-  // lalu digabung dengan data struktural (id/slug/date/image) dari data-berita.ts
   const beritaMessages = t.raw("berita") as BeritaMessages;
 
   return (

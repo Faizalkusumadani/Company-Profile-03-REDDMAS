@@ -48,7 +48,7 @@ export default async function KarirPage() {
       <section id="karir">
         <div className="max-w-7xl w-full mx-auto px-4 pt-50 md:pt-98 pb-20 space-y-10">
           <div className="max-w-2xl">
-            <h1 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
+            <h1 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-reddmas-dark">
               {t("karir.header_karir")}
             </h1>
             <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-600">
@@ -83,7 +83,7 @@ export default async function KarirPage() {
           <div>
             {jobs.length > 0 ? (
               <>
-                <p className="mb-5 text-sm font-medium text-gray-500">
+                <p className="mb-5 text-sm font-medium text-gray-600">
                   {t("karir.job_count", { count: jobs.length })}
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -94,7 +94,7 @@ export default async function KarirPage() {
               </>
             ) : (
               <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-white/60 px-6 py-16 text-center">
-                <p className="text-gray-500">{t("karir.empty_state")}</p>
+                <p className="text-gray-600">{t("karir.empty_state")}</p>
               </div>
             )}
           </div>
