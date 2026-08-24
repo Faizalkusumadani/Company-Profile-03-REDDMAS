@@ -102,8 +102,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteConfig.url}${locale}`,
       languages: {
-        "id-ID": `${siteConfig.url}id`,
-        "en-US": `${siteConfig.url}en`,
+        id: `${siteConfig.url}id`,
+        en: `${siteConfig.url}en`,
+        "x-default": `${siteConfig.url}id`,
       },
     },
 
@@ -139,13 +140,13 @@ export default async function LocaleLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "@id": `${siteConfig.url}/#organization`,
+    "@id": `${siteConfig.url}#organization`,
     description: `${siteConfig.description}`,
     name: siteConfig.name,
     alternateName: siteConfig.shortName,
-    url: `${siteConfig.url}/${locale}`,
-    logo: `${siteConfig.url}/logo/logo-smp.png`,
-    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    url: `${siteConfig.url}${locale}`,
+    logo: `${siteConfig.url}/og-image.png`,
+    image: `${siteConfig.url}${siteConfig.ogImage.replace(/^\//, "")}`,
     telephone: "+62-21-5835-1648",
     email: "customersupport@reddmasgroup.com",
     priceRange: "$$",
