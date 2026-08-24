@@ -328,28 +328,49 @@ export default function HeroCarousel() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
+      {/* ── Background images — semua slide di-mount sekali di awal dan tidak pernah
+             unmount lagi; pergantian slide dikontrol lewat opacity CSS. Ini mencegah
+             Next/Image membuat request baru ke /_next/image setiap kali autoplay
+             berganti slide (sebelumnya: key={`slide-${current}`} pada AnimatePresence
+             membuat <Image> di-unmount+mount ulang tiap 6 detik → request 304 berulang). ── */}
+      <div className="absolute inset-0">
+        {slides.map((s, i) => (
+          <div
+            key={`bg-${i}`}
+            aria-hidden={i !== current}
+            className="absolute inset-0 transition-opacity ease-in-out"
+            style={{
+              opacity: i === current ? 1 : 0,
+              transitionDuration: `${transitionDuration * 1000}ms`,
+              zIndex: i === current ? 1 : 0,
+            }}
+          >
+            <Image
+              src={s.imageSrc}
+              alt=""
+              fill
+              quality={70}
+              priority={i === 0}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              className="object-cover"
+              style={{ objectPosition: "center 30%" }}
+              sizes="100vw"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* ── Overlay gradients + konten teks — ini yang boleh unmount/mount tiap
+             ganti slide karena murah (cuma div & teks, tidak ada network request). ── */}
       <AnimatePresence mode="sync">
         <motion.div
           key={`slide-${current}`}
-          className="absolute inset-0"
+          className="absolute inset-0 z-2"
           initial={current === 0 ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: transitionDuration, ease: "easeInOut" }}
         >
-          {/* Background image */}
-          <Image
-            src={slide.imageSrc}
-            alt=""
-            fill
-            quality={70}
-            priority
-            fetchPriority={current === 0 ? "high" : "auto"} // opsional: cuma slide pertama yang "high"
-            className="object-cover"
-            style={{ objectPosition: "center 30%" }}
-            sizes="100vw"
-          />
-
           {/* Dark overlay */}
           <div
             className="absolute inset-0"
