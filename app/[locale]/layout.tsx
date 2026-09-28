@@ -72,6 +72,12 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
+    // Google Search Console / Bing Webmaster (lewat env var, jangan hardcode).
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+      verification: {
+        google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+      },
+    }),
 
     openGraph: {
       type: "website",
