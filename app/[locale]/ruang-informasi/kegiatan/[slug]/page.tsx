@@ -9,11 +9,14 @@ import {
   getKegiatanBySlug,
   getKegiatanText,
   formatKegiatanDate,
+  type KegiatanMedia,
   type KegiatanMessages,
 } from "@/data/data-kegiatan";
+import MediaView from "@/components/Media";
+
 import type { Metadata } from "next";
 
-const siteUrl = "https://reddmasgroup.com/";
+const siteUrl = "https://reddmasgroup.com";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -68,6 +71,11 @@ export default async function KegiatanDetailPage({ params }: Props) {
 
   const text = getKegiatanText(kegiatanMessages, item.id);
 
+  // Jika `media` tidak diisi, fallback ke cover `image`
+  const mediaList: KegiatanMedia[] = item.media?.length
+    ? item.media
+    : [{ type: "image", src: item.image }];
+
   const kegiatanLainnya = [...kegiatanperusahaan].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
@@ -100,15 +108,21 @@ export default async function KegiatanDetailPage({ params }: Props) {
                 <p className="text-gray-400 text-xs sm:text-sm mb-6">
                   {t("posted")} Admin &mdash; {formatKegiatanDate(item.date)}
                 </p>
-                <div className="relative w-full h-64 md:h-112 rounded-xl overflow-hidden mb-8">
-                  <Image
-                    src={item.image}
-                    alt={text.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 800px"
-                    className="object-cover"
-                    priority
-                  />
+
+                <div className="mb-8 space-y-4">
+                  {mediaList.map((media, index) => (
+                    <div
+                      key={`${media.src}-${index}`}
+                      className="relative w-full h-64 md:h-112 rounded-xl overflow-hidden"
+                    >
+                      <MediaView
+                        media={media}
+                        alt={text.title}
+                        priority={index === 0}
+                        sizes="(max-width: 768px) 100vw, 800px"
+                      />
+                    </div>
+                  ))}
                 </div>
 
                 <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">

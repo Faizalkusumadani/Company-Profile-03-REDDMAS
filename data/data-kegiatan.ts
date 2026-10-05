@@ -1,8 +1,13 @@
+export type KegiatanMedia =
+  | { type: "image"; src: string; alt?: string }
+  | { type: "video"; src: string; poster?: string; mimeType?: string };
+
 export interface KegiatanItem {
   id: string;
   slug: string;
   date: string;
   image: string;
+  media?: KegiatanMedia[]; // opsional: media di halaman detail (image/video)
   updatedAt: string;
 }
 
@@ -58,6 +63,20 @@ export const kegiatanperusahaan: KegiatanItem[] = [
     date: "2025-08-09",
     image: "/Kegiatan/Letsgrow/001.JPEG",
     updatedAt: "2025-08-09",
+  },
+  {
+    id: "hari-batik-2026",
+    slug: "hari-batik-2026",
+    date: "2026-10-02",
+    image: "/Kegiatan/Hari-batik-2026/image-01.jpeg",
+    media: [
+      {
+        type: "video",
+        src: "/Kegiatan/Hari-batik-2026/hari-batik-nasional.mp4",
+        poster: "/Kegiatan/Hari-batik-2026/image-01.jpeg",
+      },
+    ],
+    updatedAt: "2026-10-20",
   },
 ];
 
