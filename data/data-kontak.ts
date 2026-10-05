@@ -30,6 +30,6 @@ export const locations: ContactLocation[] = [
     key: "company-profile",
     icon: "download",
     value: "klik here",
-    href: "/files/Compro Reddmas-Group.pdf",
+    href: "/files/Compro-Reddmas-Group.pdf",
   },
 ];
